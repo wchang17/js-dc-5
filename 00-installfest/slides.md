@@ -15,9 +15,9 @@
 | 5 min  | Break                                    |
 | 30 min | What Makes JS Important?                 |
 | 5 min  | Break                                    |
-| 60 min | Install All The Things!                  |
+| 90 min | Install All The Things!                  |
 | 5 min  | Break                                    |
-| 20 min | What is JavaScript                       |
+| 30 min | What is JavaScript                       |
 
 ---
 
@@ -41,7 +41,7 @@
 ### Find a new corner!
 
 --
-### Question 2: What do you do in DC?
+### Question 2: What do you do?
 - Where do you work?
 - What do you like about it?
 
@@ -83,10 +83,6 @@ What makes JavaScript important?
 --
 ### Why do you want to learn JavaScript?
 
---
-
-## Break!
-
 ---
 
 ## InstallFest
@@ -101,13 +97,14 @@ What makes JavaScript important?
 
 --
 ### Instructions:
-https://github.com/ZakkMan/JS-DC-3/blob/master/00-installfest/install.md
+https://github.com/ga-students/js-dc-4/blob/master/00-installfest/install.md
 
 --
 ### Finish Early?
 - find an Atom/Sublime theme that you really like
-- look in to Atom/Sublime packages you can download and play around with them
-- read about `npm` and what `npm` packages you may want to download
+- look for Atom/Sublime packages:
+  - `eslint`, `emmet`, `file icons`, `beautify`, `asteroids`
+- read about `npm` and `npm` packages
 - read about `nvm` and try to set it up yourself
 
 --
@@ -116,15 +113,7 @@ https://github.com/ZakkMan/JS-DC-3/blob/master/00-installfest/install.md
 
 ---
 
-## What is JavaScript?
-
----
-
-## Exercise
-
----
-
-## Class Information, Final Questions & Exit Tickets
+## History of JavaScript
 
 ---
 ## Homework
