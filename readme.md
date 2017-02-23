@@ -70,10 +70,11 @@ D. [Class Pass](./assets/class-pass.png) printed out or on your phone
 
 ### Class 01: Command Line
 
+In this lesson, we'll cover the basics of navigating the file system on your computer with a tool called the command line. We'll also dive into working with a command line tool called Git and a companion tool called GitHub.
+
 #### Learning Objectives
 - Learn how to work in the Terminal
 - Learn the basics of Git and GitHub
-- Learn how to run JavaScript from/in the Terminal
 
 #### Materials
 - [Slides](https://ga-students.github.io/js-dc-4/01-command-line-JS)

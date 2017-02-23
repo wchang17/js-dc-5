@@ -11,6 +11,7 @@
   * Find a theme you like add it to your Terminal
   * Add the current branch to your command prompt
   * Add an emoji to your command prompt
+* Read about adding tab completion for Git and aliasing commands [here](https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks)
 
 # Going Deeper
 [Atlassian](https://www.atlassian.com) - a competitor to GitHub - has some amazing tutorials and resources on Git. Check them out [here](https://www.atlassian.com/git/tutorials).
