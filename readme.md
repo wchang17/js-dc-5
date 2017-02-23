@@ -77,7 +77,7 @@ In this lesson, we'll cover the basics of navigating the file system on your com
 - Learn the basics of Git and GitHub
 
 #### Materials
-- [Slides](https://ga-students.github.io/js-dc-4/01-command-line-JS)
+- [Slides](https://ga-students.github.io/js-dc-4/01-command-line)
 - [Assignment](01-command-line-JS/assignment.md)
 - [Lesson Notes](01-command-line-JS/lesson_plan.md)
 
