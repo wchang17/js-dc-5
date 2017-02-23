@@ -70,7 +70,7 @@ Similarly, I think we'll be able to pretty immediately see the benefit of having
 ### Types of Templating Engines / Languages
 - Jade / Pug:
   - html processing component gives us everything a templating engine does but includes a cleaner way to write html
-- Nunjucks / Swig: logic-full templating, typically with `{% %}`
+- Nunjucks / Swig: logic-full templating, typically with
 - EJS - embeded JavaScript (port of ERB: Embeded Ruby)
 - Handlebars / Mustache - logic-less (typically), typically recognized with `{{}}`
 
