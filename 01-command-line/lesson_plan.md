@@ -73,6 +73,8 @@ For Windows:
 - create a new repository on GitHub
 - push your changes to Github
 
+*Maybe take a break around this point*
+
 ### Forking a Repository
 - pair up wit the person sitting next to you
 - have them slack you the link to their repository and slack them the link to yours
