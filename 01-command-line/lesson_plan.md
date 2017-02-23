@@ -3,24 +3,32 @@
 - Welcome to Class
 - Go over the Learning Objectives
 
-## The Terminal (6:35 - 7:05)
+## The Terminal
 
 ### Introduction
 - What is the terminal?
   - Terminal = Command Line = Console
   - Terminal is a tool for us to navigate the file system on our computer
+  - Predates the GUI (i.e. Finder on a Mac or Explorer on a PC)
+  - Character User Interface
 - Why might we use it?
-  - (1) power (2) efficiency
-  - makes it easier for us to work with our computers: get around the file system, create, edit, move files around, copy files
-  - time is money - as developers, keystrokes are time - so the faster we can get around and work in our environment, the more productive we can be
-- learning the terminal is sort of a barrier for entry - have to get up the learning curve before we can be really effective at our jobs
-- investing time in learning your code editor reaps similar rewards
+  1. It's concise and powerful - you can do a lot with relatively few keystrokes,
+  2. It's efficient - both as a use of time and for your machine, because it requires fewer resources,
+  3. It's expert-friendly - which is to say that if you invest a little time in getting good at using the command line, the productivity benefits that you'll reap are incredible,
+  4. It's easy to automate via scripting - you can write scripts that will handle repetitive tasks.
 
 For Macs:
 - Open the "Terminal" app (Applications > Utilities > Terminal)
 
 For Windows:
 - Open the "Git BASH" application
+
+### Anatomy of the Terminal
+- prompt
+- command
+- input
+- flags/Options
+- output
 
 ### Navigating our File System
 - start by figuring out where we are now:
@@ -38,94 +46,62 @@ For Windows:
 - navigating folders is super useful, but you guys probably don't have that many yet - so lets make some
   - make directory - `mkdir`
 
-### Creating a folder for our classwork
-- kick in doing something useful: lets make a set of folders for us to organize our notes and homework assignments from class
-  - how do we make a new folder? `mkdir js_dc_3`
-  - how do we change into that folder? `cd js_dc_3`
-  - How do we create a file? `touch class_notes.md`
-  - What if we want to make multiple folders at once?
-  - What if we want to remove a folder?
-  - What if we create a folder and we want to copy it?
-  - How to we move files from one folder to another?
+## Activity: Terminal Review
+- Count off 1-4 and find a corner of the room
+- A question or command will come up on the board
+- Go around your group answering the question or explaining what the command does
 
-Sum Up Exercise: Write all the commands we just learnt on the board and ask follow up questions on each
-
-## Activity: Customizing your Bash Profile (7:05 - 7:20)
-- Setup short command for your text editor
-- Edit and modify your command prompt
-- Find and implement a terminal theme (background and text color)
-- Add the branch or repository to your command prompt
-
-## Git and GitHub (7:30 - 8:00)
+## Git and GitHub
 - Last class we installed something called Git and we made you all get accounts on something called GitHub before this course started
 - What are these?
 
-GIT: version control software
-- gives us the ability to do line by line edits to watched files
-- we initialize a repository - a folder  of files we want to watch with git
-- when we make changes to those files, git records those changes, per line
-- When can then stage those changes, commit them (like saving), then push them
-- push them to a remote repository
+#### A Brief Introduction
+- Git:
+  - A version control system
+  - not so different from track changes in Microsoft word, but a lot more powerful
+  - the goal of a version control system is to allow multiple people to work on the same code base easily, keeping track of everyone's changes and the history of all those changes
+- Github
+  - Saas platform for working with git
 
-GitHub: SaaS tool for working with Git
-- hosting remote repositories
-- collaboration on a single codebase
+#### Workflow
+*Draw this on the board*
 
-### How do we use git
-- Create a `repository` - `git init`
-  - now that we have a working repository, what next?
-  - think of it like saving our changes
-- moving up:
-  - start with the files locally on our machine
-  - stage these changes - tells git we want to "save" these changes
-  - commit these changes - "saves" these changes locally
-  - push commit history to the remote repository - gives everyone else working on this project access to our work
-  - pull commits to our local repository
-- Now lets do all of this together
-  - check to see if we have changes that we can stage and commit: `git status`
-  - stage changes to be committed -  `git add .`
-  - commit changes `git commit` or `git commit -m "commit message"`
-  - create a remote repository for us to push changes to on GitHub
-  - add that repository as the `remote origin`
-  - push changes to that repository
-  - refresh the page to see if they showed up
+### Creating a Repository
+- create a new repository using git init
+- add a file to a repository
+- commit those changes
+- create a new repository on GitHub
+- push your changes to Github
 
-### If there is extra time
-- send the link to your repository to the person sitting next to you
-- take that repository and clone it locally
-    - make some changes, stage and commit them, then push them
-    - pull the changes to your own repository
+### Forking a Repository
+- pair up wit the person sitting next to you
+- have them slack you the link to their repository and slack them the link to yours
+- Once you've opened the repository in github
 
-## Activity: Scavenger Hunt (8:00 - 8:20)
+### Cloning a Repository
+- Copy the link for the repository
+- in the command line, clone the repository to a new directory
+
+### Making a Pull Request
+- push your changes to origin of the forked repository
+- go to the github.com for the forked repository and navigate back to the original repository
+- click on 'Pull Request', then 'New' to create a pull request. Give it a title and then write a message describing the changes you made.
+- Go back to your own repository and check the pull request. Go ahead and merge it in
+
+### Working with upstream
+- pull down the changes your partner made using `git pull`
+- make a change to `index.js` and push it up to your origin
+- now switch to your clone of your partner's repository
+- navigate to the github.com page for your partners repo and copy the link
+- switching back to the command line, add the repository as upstream by running `git remote add upstream https://github.com/username/repository`
+- now run `git pull upstream master` to synchronize their changes with yours, and push them to your remote origin.
+
+## Class Work
+- we have a repository for this class which contains all the lesson notes, the slides and your homework assignments
+- You'll want to fork this repository and clone your fork locally so that you can (1) follow along and (2) do your homework
+- you'll submit your homework before every class by making a pull request
+- I would make a directory at the root level of your user called `projects` or `dev` or something like that. Then create a folder there called `ga` or `general-assembly` and clone your fork of the repository into that folder as `js-dc-4`.
+
+
+## Activity: Scavenger Hunt
 https://github.com/ga-students/js_dc_scavenger_hunt
-
-## Command Line JavaScript (8:30 - 9:00)
-- the last things we need to cover that we installed last class are Node and NPM, what are these?
-- I explained to some of you that Node is a JavaScript runtime
-  - from the timeline, Chrome's V8 engine - super performant JavaScript Engine
-  - unpack that a little bit:
-    - an engine "runs" the language
-    - remember the language spec determines the features of the language and how it should work but someone has to go build that
-- Node is built on top of V8, but does not require a browser
-  - unique because it works outside of the browser
-  - lets us manage servers and databases and do all sorts of non-browser, back-end things with JavaScript - building APIs
-  - lets us run JavaScript from our terminal
-
-
-- running files with Node
-  - create a js file that console.logs hello world to the console
-  - take user input
-
-- using the node repl
-  - using the node repl
-
-
-- what is npm
-- running npm init
-- installing a package with npm
-  - `npm install --save-dev flip-text`
-  - requiring an npm package and using it
-  - taking user input: `var argument = process.argv[2]`
-
-
-## Slips (9:00 - 9:30)

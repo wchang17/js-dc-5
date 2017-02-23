@@ -10,15 +10,22 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 30 min | Introducing the Terminal                 |
-| 15 min | Activity: Customizing your Bash Profile  |
-| 10 min | Break                                    |
-| 30 min | Git and GitHub                           |
+| 40 min | Introducing the Terminal                 |
 | 20 min | Activity: Scavenger Hunt                 |
 | 10 min | Break                                    |
-| 20 min | Command Line JavaScript                  |
-| 30 min | Introduction to Slips                    |
+| 60 min | Git and GitHub                           |
+| 10 min | Break                                    |
+| 50 min | Git and GitHub (cont'd)                  |
+| 10 min | Closing                                  |
 | 5  min | Check Out                                |
+
+---
+### Learning Goals
+* Navigate using the terminal
+* Manage a local repository in Git
+* Fork a repository
+* Clone a repository
+* Make a pull request on a repository
 
 ---
 ## The Terminal
@@ -29,8 +36,57 @@
 
 --
 ### Why use it?
-1. Powerful
+1. Concise and powerful
 2. Efficient
+3. Requires fewer resources
+4. Expert-friendly
+5. Easy to automate via scripting
+
+--
+### Anatomy of the Terminal
+
+<img src="../assets/00-command-line-01.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+--
+#### The Terminal
+
+<img src="../assets/00-command-line-02.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+--
+#### The Terminal
+
+<img src="../assets/00-command-line-03.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+--
+#### The Terminal
+
+<img src="../assets/00-command-line-04.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+--
+#### The Terminal
+
+<img src="../assets/00-command-line-05.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+--
+#### The Terminal
+
+<img src="../assets/00-command-line-06.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+--
+#### The Terminal
+
+<img src="../assets/00-command-line-07.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+--
+### Terminal Anatomy
+
+| Part        | Description                       |
+| ----------- | --------------------------------- |
+| Prompt      | Where you enter commands          |
+| Command     | Text to be executed               |
+| Input       | Options and Data for the command  |
+| Flag/Option | Specific data for a given command |
+| Output      | What the command returns          |
 
 --
 ### Code Along!
@@ -38,8 +94,8 @@ Open your Terminal and follow along
 
 --
 ### Unstructured Review
-- create a folder for all your work at the root level of your directory
-- set up a filing system for your coursework and/or any other projects you have
+- practice navigating around your computer using the command line
+- try each command at least 5 times
 
 --
 ### Navigating the Command Line
@@ -56,11 +112,13 @@ Open your Terminal and follow along
 --
 ### Paths and Directories
 
-| Path  | Description       |
-| ----- | ----------------- |
-| `./`  | current directory |
-| `../` | up one directory  |
-| `~/`  | home directory    |
+| Path     | Description        |
+| -------- | -----------------  |
+| `./`     | current directory  |
+| `../`    | up one directory   |
+| `../../` | up two directories |
+| `/`      | root directory     |
+| `~/`     | 'home' directory   |
 
 --
 ### Working with Files and Folders
@@ -74,29 +132,78 @@ Open your Terminal and follow along
 | `touch`     | Create an empty file                       |
 | `echo`      | Return a string                            |
 
----
-## Customizing our Bash Profile
-
---
-### Ideas
-- Setup short command for your text editor
-- Edit and modify your command prompt
-- Find and implement a terminal theme (background and text color)
-- Add the branch or repository to your command prompt
-
 --
 ## Break
+
+---
+## Terminal Review
+
+--
+### Terminal Review
+- Count off 1-4 and find a corner of the room
+- A question or command will come up on the board
+- Go around your group answering the question or explaining what the command does
+
+--
+### `pwd`
+
+--
+### How to I create a folder through the command line?
+
+--
+### `rm -rf test-directory`
+
+--
+### `mv test-directory/* dir02/`
+
+--
+### What is a relative path?
+
+--
+### `touch test.js`
+
+--
+### `cp test-directory/* dir02/`
+
+--
+### What is an absolute path?
+
+--
+## Done!
+Great job!
 
 ---
 ## Git and GitHub
 
 --
-### Git
-Version Control
+### Overview
+- Git: Version Control System
+- GitHub: Saas tool for working with Git
 
 --
-## GitHub
-SaaS tool for working with Git
+### Version Control System
+
+--
+### Git Overview
+- Creating and working with a repository
+- Forking a repository
+- Cloning a repository
+
+--
+### 20,000 Feet
+What is Version Control and how does it work?
+
+--
+### Key terms
+
+| Term  | Definition |
+| ----- | ---------- |
+| repository | Folder where git manages changes and history |
+| local | the version of the repository on your machine |
+| remote/origin | a shared version of the repository hosted on a server |
+| fork | a snapshot or copy of a repository |
+| pull request | submitting changes from a fork to be merged |
+| upstream | The original repository of a forked repository |
 
 --
 ### Code Along!
@@ -121,97 +228,3 @@ SaaS tool for working with Git
 - Can't include any trees!
 
 https://github.com/ga-students/js_dc_scavenger_hunt/blob/master/readme.md
-
---
-## Break
-
----
-## Command Line JavaScript
-
---
-### Command Line JavaScript
-- Node.js
-- npm
-
---
-### What do we use Node for?
-- creating back-end/server-side applications
-- running scripts
-- file management
-- making command line applications
-
---
-## What do we use NPM for?
-- managing project dependencies
-
---
-### Try Node!
-
----
-## Slips
-
---
-### What year was JavaScript created?
-
---
-### What makes JavaScript a great language to learn?
-
---
-### How do I change directories in the terminal?
-
---
-### Who created JavaScript?
-
---
-### What is Node?
-
---
-### What does `git push` do?
-
---
-### What command do I use to make a directory in the terminal?
-
---
-### How do I delete files and/or folders from the terminal?
-
---
-### How do I copy a file in the terminal?
-
---
-### How do I check to see if there are changes to git my repository?
-
---
-### What is the Terminal and why do we use it?
-
---
-### How do I stage changes in a git repository?
-
---
-### What is a git repository?
-
---
-### How do I move a file in the terminal?
-
---
-### How do I create a new git repository?
-
---
-### What is NPM and what do we use it for?
-
---
-### How do I commit changes in a git repository?
-
---
-### What is a `package.json` file and what do we use it for?
-
---
-### What does `git pull` do?
-
---
-### How do I find out what directory I am currently in?
-
---
-### What does `ls` do in the Terminal?
-
----
-## Check Out
