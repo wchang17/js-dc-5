@@ -157,11 +157,15 @@ h2 By #{author}
 --
 ### Nunjucks / Swig
 
-<pre>
-  <code class="markdown">
-    <h1> Hello {% name %} </h1>
-  </code>
-</pre>
+{% raw %}
+```
+<h1> Hello {% name %} </h1>
+```
+{% endraw %}
+
+```
+<h1> Hello \{\% name \%\} </h1>
+```
 
 --
 ### EJS
