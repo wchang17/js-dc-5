@@ -77,7 +77,11 @@
 
 
 ### 1996
+- Netscape was able to capture a majority of the browser market share in just 2 years; they were super aggressive about growth
 - Microsoft launches JScript, an extremely high fidelity clone of JavaScript
+- One of the first tipping points in the development and success of javascript
+- Even copied in some of the languages bugs and quirks
+
 
 ### 1998
 - Netscape retains control of the language but now they're fighting with Microsoft about it
