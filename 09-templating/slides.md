@@ -109,7 +109,7 @@ h2 By #{author}
 --
 ### Nunjucks / Swig
 ```
-<h1> Hello {% name %} </h1>
+<h1> Hello \{\% name \%\} </h1>
 ```
 
 --

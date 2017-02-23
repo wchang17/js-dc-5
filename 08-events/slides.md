@@ -157,12 +157,6 @@ h2 By #{author}
 --
 ### Nunjucks / Swig
 
-{% raw %}
-```
-<h1> Hello {% name %} </h1>
-```
-{% endraw %}
-
 ```
 <h1> Hello \{\% name \%\} </h1>
 ```
