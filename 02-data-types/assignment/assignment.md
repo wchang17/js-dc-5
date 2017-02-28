@@ -15,9 +15,7 @@ As a refresher (since it's probably been a while since you've done any geometry!
 4. add the square of deltaX to the square of deltaY
 5. take the square root of the sum of step 4
 
-If you're a visual person, it looks like this:
-
-![image](http://www.purplemath.com/modules/xyplane/dist07b.gif)
+If you're a visual person, it looks like [this](http://www.purplemath.com/modules/distform.htm).
 
 ## Exercise:
 Create a `distance.js` file, so that when run with `node distance.js` it will return the distance between point 1 at [1, 3] and point 2 at [10, 15].
