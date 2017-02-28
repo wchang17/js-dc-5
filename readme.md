@@ -92,7 +92,7 @@ Data types are the most atomic unit of any program. Javascript has many basic da
 
 #### Materials
 - [Slides](https://ga-students.github.io/js-dc-4/02-data-types)
-- [Assignment](02-data-types/assignment/decoder.js)
+- [Assignment](02-data-types/assignment/assignment.md)
 - [Lesson Notes](02-data-types/lesson_plan.md)
 
 
