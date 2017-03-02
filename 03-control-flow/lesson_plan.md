@@ -38,7 +38,7 @@ console.log( 'linear' )
 console.log( 'control' )
 console.log( 'flow' )
 console.log( 'in' )
-console.log( 'action.' )
+console.log( 'action' )
 ```
 
 We would expect each line to be `console.log`ed, in order.
