@@ -8,28 +8,14 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 20 min | Advanced Git                             |
-| 15 min | Homework Review: Data Types and Arrays   |
+| 20 min | Homework Review: Data Types and Arrays   |
+| 35 min | Control Flow                             |
 | 5  min | Break                                    |
-| 45 min | Control Flow                             |
+| 50 min | Control Flow (cont'd)                    |
 | 5  min | Break                                    |
-| 45 min | Control Flow (cont'd)                    |
-| 5  min | Break                                    |
+
 | 20 min | Exercise                                 |
 | 5  min | Exit                                     |
-
----
-## Advanced Git
-Forking and Pull Requests
-
---
-### Fork a repository
-
---
-### Clone our Fork
-
---
-### Get upstream changes
 
 ---
 ## Review
