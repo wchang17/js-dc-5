@@ -1,7 +1,8 @@
 /*
 Warm up
 
-The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+2,520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 
-Find the sum of all the primes below two million.
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
 */
