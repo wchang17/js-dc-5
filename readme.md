@@ -10,7 +10,7 @@ Once you're upstairs, tell the folks at the front desk you're here for your firs
 
 ## Office Hours
 
-Zakk: Sundays from 3:30 - 5:30
+Zakk: Sundays from 3:00 - 5:00
 
 Christine: Wednesdays from 5:30 to 7:30
 
@@ -127,7 +127,7 @@ Now that we know how to work with data and control when certain actions are perf
 
 
 ### Class 05: Objects
-Our final class on Javascript as a language covers Objects. This lesson will also cover Object Oriented Programming, a paradigm often held in opposition to Functional Programming, which we talked about in the last class. 
+Our final class on Javascript as a language covers Objects. This lesson will also cover Object Oriented Programming, a paradigm often held in opposition to Functional Programming, which we talked about in the last class.
 
 #### Learning Objectives
 - Create and modify JavaScript Objects
@@ -143,7 +143,7 @@ Our final class on Javascript as a language covers Objects. This lesson will als
 ### Class 06: Lab
 
 #### Lab
-- [js-dc-4-Lab01](https://github.com/ga-students/js-dc-4-Lab01)
+- [js-dc-4-Lab01](https://github.com/ga-students/JS-DC-4-Lab01)
 
 #### Materials
 - [Slides](https://ga-students.github.io/js-dc-4/06-lab)
