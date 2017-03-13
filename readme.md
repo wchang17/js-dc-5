@@ -108,7 +108,7 @@ Programming is often described as following a recipe - in this lesson, we discus
 - [Slides](https://ga-students.github.io/js-dc-4/03-control-flow)
 - [Assignment](03-control-flow/assignment/assignment.md)
 - [Lesson Notes](03-control-flow/lesson_plan.md)
-
+- [Lesson](https://www.youtube.com/watch?v=KO0SdPEt044)
 
 ### Class 04: Functions
 Now that we know how to work with data and control when certain actions are performed by our program, we need a way to encapsulate code so we can reuse it. Functions let us write code that will perform an action whenever we ask it to do so.
@@ -124,7 +124,7 @@ Now that we know how to work with data and control when certain actions are perf
 - [Slides](https://ga-students.github.io/js-dc-4/04-functions)
 - [Assignment](04-functions/assignment.md)
 - [Lesson Notes](04-functions/lesson_plan.md)
-
+- [Lesson](https://www.youtube.com/watch?v=89zXKZllUqI)
 
 ### Class 05: Objects
 Our final class on Javascript as a language covers Objects. This lesson will also cover Object Oriented Programming, a paradigm often held in opposition to Functional Programming, which we talked about in the last class.
@@ -138,7 +138,7 @@ Our final class on Javascript as a language covers Objects. This lesson will als
 - [Slides](https://ga-students.github.io/js-dc-4/05-objects)
 - [Assignment](05-objects/assignment.md)
 - [Lesson Notes](05-objects/lesson_plan.md)
-
+- [Lesson](https://www.youtube.com/watch?v=5jAj3ZullDA)
 
 ### Class 06: Lab
 
