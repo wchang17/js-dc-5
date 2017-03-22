@@ -294,3 +294,6 @@ Today's lesson is short and sweet! We'll go over npm and breaking our program ou
 
 ### Class 19: Presentations
 Students will have 10 minutes to present their final projects. See the [presentation requirements here](20-presentations/requirements.md)
+
+### Class 19+: Profit
+Students will $$$
