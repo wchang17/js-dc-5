@@ -181,16 +181,16 @@ Today's class goes in depth on event driven development, responding to browser/u
 - [Lesson Notes](08-events/lesson_plan.md)
 
 
-### Class 09: Templating & Build Tools
+### Class 09: Templating
 
 #### Learning Objectives
 - Use Handlebars templates to turn JS into HTML
 - build a simple dynamic application using Handlebars and JS
 
 #### Materials
-- [Slides](https://ga-students.github.io/js-dc-4/09-mvc)
-- [Assignment](09-mvc/assignment.md)
-- [Lesson Notes](09-mvc/lesson_plan.md)
+- [Slides](https://ga-students.github.io/js-dc-4/09-templating/)
+- [Assignment](09-templating/assignment.md)
+- [Lesson Notes](09-templating/lesson_plan.md)
 
 
 ### Class 10: Express
