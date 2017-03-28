@@ -109,7 +109,7 @@ http://tryhandlebarsjs.com/
 ---
 ## Final Projects
 
-- [Assignment](https://github.com/ga-students/JS-DC-3/final-project)
+- [Assignment](https://github.com/ga-students/JS-DC-4/final-project)
 - [Ideas](https://gallery.generalassemb.ly/WDI)
 
 --
