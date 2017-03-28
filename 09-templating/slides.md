@@ -109,14 +109,14 @@ http://tryhandlebarsjs.com/
 ---
 ## Final Projects
 
-- [Assignment](https://github.com/ga-students/JS-DC-4/final-project)
+- [Assignment](https://github.com/ga-students/js-dc-4/tree/master/final-project)
 - [Ideas](https://gallery.generalassemb.ly/WDI)
 
 --
 
 ### Final Project Schedule
 
-- Idea Submission: July 18
-- UI Draft: August 2
-- In Class Lab Time: August 16
-- Presentations/Due: August 18
+- Idea Submission: April 4
+- UI Draft: April 18
+- In Class Lab Time: April 27
+- Presentations/Due: May 2
