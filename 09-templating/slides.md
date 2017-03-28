@@ -22,7 +22,7 @@
 | ---------- | ------------------------ |
 |     07     | Intro to the DOM         |
 |     08     | Events                   |
-|   **09**   | **Templating & Build Tools** |
+|   **09**   | **Templating**           |
 |     10     | Express                  |
 |     11     | Databases & CRUD         |
 |     11     | APIs                     |
