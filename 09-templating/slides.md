@@ -69,43 +69,35 @@ Refactor slideshow to respond to events
 
 --
 ### Jade / Pug
-```
-h1 This is a Pug template
-h2 By #{author}
-```
+
+<img src="../assets/09-templating-jade.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
 
 --
 ### Nunjucks / Swig
-```
-<h1> Hello {% name %} </h1>
-```
+
+<img src="../assets/09-templating-nunjucks.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
 
 --
 ### EJS
-```
-<h1> Hello <% name %>  </h1>
-```
+
+<img src="../assets/09-templating-ejs.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
 
 --
 ### Handlebars / Mustache
-```
-<div class="entry">
-  <h1>{{ title }}</h1>
-  <div class="body">
-    {{ body }}
-  </div>
-</div>
-```
+
+<img src="../assets/09-templating-handlebars.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+
 
 --
 ### Relation to Web Components
-```
-class App extends Component (
-  render () {
-    return <h1>Hello world</h1>
-  }
-)
-```
+
+<img src="../assets/09-templating-react.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+
 
 --
 ### Up and Running with Handlebars
