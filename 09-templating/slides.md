@@ -8,7 +8,8 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 30 min | Warmup / Review                          |
+| 20 min | Review                                   |
+| 30 min | Warmup                                   |
 | 10 min | WTF is jQuery                            |
 | 80 min | Intro to Templating                      |
 | 30 min | Closing Exercise                         |
