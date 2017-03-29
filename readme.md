@@ -294,3 +294,6 @@ Today's class goes in depth on event driven development, responding to browser/u
 
 ### Class 19: Presentations
 Students will have 10 minutes to present their final projects. See the [presentation requirements here](20-presentations/requirements.md)
+
+### Class 19+: Profit
+Students will $$$
