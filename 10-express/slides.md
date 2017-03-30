@@ -8,6 +8,7 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
+| 10 min | Final Project                            |
 | 15 min | Web Application Architecture             |
 | 25 min | HTTP                                     |
 | 5  min | Break                                    |
@@ -29,6 +30,21 @@
 |     11     | APIs                     |
 |     12     | Application Architecture |
 |     13     | Lab #2                   |
+
+---
+## Final Projects
+
+- [Assignment](https://github.com/ga-students/js-dc-4/tree/master/final-project)
+- [Ideas](https://gallery.generalassemb.ly/WDI)
+
+--
+
+### Final Project Schedule
+
+- Idea Submission: April 4
+- UI Draft: April 18
+- In Class Lab Time: April 27
+- Presentations/Due: May 2
 
 ---
 ## Homework Review
