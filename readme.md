@@ -204,6 +204,7 @@ Today's class goes in depth on event driven development, responding to browser/u
 - [Slides](https://ga-students.github.io/js-dc-4/10-express)
 - [Assignment](10-express/assignment.md)
 - [Lesson Notes](10-express/lesson_plan.md)
+- [Lesson](https://www.youtube.com/watch?v=_7Xgg3XA4nk)
 
 
 ### Class 11: CRUD and Databases
