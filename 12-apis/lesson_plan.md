@@ -11,7 +11,6 @@
 - Closing Questions / Tying up loose ends
 - Exit Tickets
 
-<<<<<<< HEAD
 ## Sections to cover:
 1. AJAX
 - Understand the benefits of AJAX

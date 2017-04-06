@@ -1,7 +1,6 @@
 var express = require('express')
 var app = express()
 
-<<<<<<< HEAD:12-apis/exercise/json-express-exercise/exercise1/index.js
 var quotes =
 [{ author : 'Audrey Hepburn',
     text : "Nothing is impossible, the word itself says 'I'm possible'!"
