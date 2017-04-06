@@ -11,6 +11,7 @@
 - Closing Questions / Tying up loose ends
 - Exit Tickets
 
+<<<<<<< HEAD
 ## Sections to cover:
 1. AJAX
 - Understand the benefits of AJAX
@@ -222,5 +223,8 @@ History of APIs - types of APIs
     var hbs = require('hbs');
     require('handlebars-form-helpers').register(hbs.handlebars);
     You have to register the helpers before you can use them in your templates. The register method expects the Handlebars object to be passed in, and an optional config object, for example:
+
+## Building a simple API with Express
+
 
 ## Wrap up and review (5 min)  
