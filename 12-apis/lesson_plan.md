@@ -11,72 +11,11 @@
 - Closing Questions / Tying up loose ends
 - Exit Tickets
 
-## Sections to cover:
-  1. HTTP
-    Goals:
-      -Understand the relationship between the client and the server
-      -Understand the HTTP headers
-      -Know the different server response codes
-  2. AJAX
-    Goals:
-      -Understand the benefits of AJAX
-      -Understand the technical aspects of AJAX
-      -Where should Ajax be used?
-  3. APIs
-    Goals:
-      -Understand the general purpose of APIs
-      -Understand the different types and use cases of APIs
-      -
 
-## Introduction to class
-We will be reviewing HTTP, learning AJAX and learning how to work with APIs
+## Warm up
+Quote Book exercise
 
-## HTTP Warm up exercise (30 min)
-Quick review- Pose these as questions:
--- The client refers to the browser, typically
--- The part of the application that the user actually sees and interacts with  
--- The client communicates back to the server, through HTTP
--- The server is where the majority of our logic will probably be and where
-    we will persist data. Like how set up mongodb yesterday
--- Client and Server relationship:
-    -The client and the server have to communicate in some way: HTTP
-    -HTTP is very structured. Whenever you navigate to a webpage, you're making
-     an HTTP request when the page loads you're receiving and HTTP response
- --Anatomy of a HTTP request (URL):
-     protocol: http:
-     host: www.domain.com
-     port: 1234 (channel through which we can send and receive communications)
-     path: /path/to/resource
-     query parameters: ?a=b&x=y
---HTTP request: Method (meta data)
---HTTP request: Body (optional extra content to send to the server- typically in JSON format)
---HTTP response: Status
-    What are the HTTP status codes? What do they mean?
-    Common Status Codes:
-    ​2XX​ Success ​ - 200​ OK - the request was processed successfully
-    ​3XX​ Redirects - the URL has changed
-    ​4XX​ Problem with the request
-    ​400​ Bad Request (generic bad request code)
-    403 Forbidden
-    ​404​ Not Found (The URL is wrong)
-    ​5XX​ Problem with the server
-    ​500​ Generic server error
-    ​503​ Service Unavailable (usually happens when traffic is high)
---HTTP response: Body
-  The body of a response can contain:
-    HTML if we are requesting a webpage
-    CSS if we're requesting linked stylesheets
-    JS if we're requesting scripts
-    JSON if we're requesting data
-
-Exercise 1: Do an HTTP exercise in an existing format of express, handlebars
-First have everyone download the JSON formatter
-
-## Review the exercise (10 min)
-
-## Break
-
-## Introduce AJAX - history (15 min)
+## Introduce AJAX - history (20 min)
   Goals:
     -Understand what AJAX is
     -Understand when, where and why AJAX is used
@@ -141,8 +80,7 @@ Where should Ajax be used?
       to wait for a response and can continue to use the web application while the request is begin processed
       -Once done, the server will send a reply back to the client and the client will process it as necessary
 
-
-## Go into classic AJAX code along (15 min)
+## Go into classic AJAX code along (30 min)
   In order to make an HTTP request to the server using JavaScript, you need an instance
   of a class that provides this functionality.
     -This is where XMLHttpRequest comes in
@@ -158,9 +96,25 @@ Where should Ajax be used?
     2 (loaded)
     3 (interactive)
     4 (complete)
-## AJAX exercise (30 min)
-  Very rudimentory exercise getting comfortbale with using Ajax
-## Break
+
+Inside event handler:
+```
+var request = new XMLHttpRequest()
+
+request.onreadystatechange = function() {
+  if ( request.readyState === 4 ) {
+    console.log('done!')
+
+    resultContainer.innerText = request.status
+  }
+}
+
+request.open('GET', 'index.html', true)
+request.send(null)
+```
+
+## AJAX exercise (20 min)
+  Very rudimentary exercise getting comfortable with using Ajax
 
 ## Introduce APIs (15 min)
 History of APIs - types of APIs
@@ -173,7 +127,7 @@ History of APIs - types of APIs
 
   In the same way that a program like Solitaire waits for you to click on a card to do something, a web server runs a program that waits for a person to ask it for a web page.
 
-  There's really nothing magical or spectacular about it. A software developer writes a program, copies it to a server, and the server runs the program continuously.  
+  There's really nothing magical or spectacular about it. A software developer writes a program, deploys it to a server, and the server runs the program continuously.  
 
 What An API Is and Why It's Valuable
 
@@ -198,15 +152,44 @@ What An API Is and Why It's Valuable
   Weatherify - have starter code ready to pull
     -Have students walk me through the components that are already in place
 
-## Code on your own (30 min)
-  -Use the Pokemon exercise as an API
-  -Create your own requests
-  -download hbs form helpers :
-  -npm install hbs (need to do this to build on top of it)
-  -npm install handlebars-form-helpers
-  -load in the module and register it:
-  var hbs = require('hbs');
-  require('handlebars-form-helpers').register(hbs.handlebars);
-  You have to register the helpers before you can use them in your templates. The register method expects the Handlebars object to be passed in, and an optional config object, for example:
+```
+searchForm.addEventListener('submit', function( e ) {
+  e.preventDefault()
+
+  // Get the values enetered by the user
+  var city = document.querySelector('input[name="city"]').value
+  var country = document.querySelector('input[name="country"]').value
+
+  // 1. Make the request to OpenWeatherMap API
+  var request = new XMLHttpRequest()
+  request.onreadystatechange = handleRequest
+
+  request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + country + '&APPID=17c4b9321d054573c1c93f24f47e706a')
+  request.send(null)
+
+  // 2. Update weather data
+  function handleRequest() {
+    if ( request.readyState === 4 ) {
+      var response = JSON.parse( request.response )
+
+      weather = {
+        city: city,
+        country: country,
+        temperature: response.main.temp,
+        description: response.weather[0].description,
+        humidity: response.main.humidity,
+        clouds: response.clouds.all
+      }
+    }
+  }
+
+  // 3. Render template
+  renderWeather()
+
+})
+```
+
+## Building a simple API with Express
+
 
 ## Wrap up and review (5 min)  
