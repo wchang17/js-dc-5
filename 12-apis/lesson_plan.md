@@ -20,7 +20,7 @@
 2. APIs
 - Understand the general purpose of APIs
 - Work with a 3rd party API
-- Build our own API
+- Build our own API 
 - Work with the API we built
 
 ## Introduction to class

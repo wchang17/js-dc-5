@@ -111,8 +111,9 @@ Exercise 1
 ### OMDB API
 - http://www.omdbapi.com/
 
-### Exercise 3
+### Exercise 2
 - Weatherify
 - http://openweathermap.org/api
 
-### Exercise 4
+### Exercise 3
+- Build our own Pokemon API
