@@ -20,13 +20,13 @@
 2. APIs
 - Understand the general purpose of APIs
 - Work with a 3rd party API
-- Build our own API 
+- Build our own API
 - Work with the API we built
 
 ## Introduction to class
 __Goal: We will be reviewing HTTP, CRUD, and Servers before learning AJAX and how to work with and build APIs ___
 
-## HTTP Review (10 min)
+## HTTP/CRUD Review (10 min)
 
 ### HTTP Request: Method
 Meta data about our request
@@ -56,8 +56,6 @@ Just like the request, a response can also have headers describing metadata.
 ### HTTP: Response: Body
 The body of a response can contain:
 
-Exercise 1: Do an HTTP exercise in an existing format of express, handlebars
-First have everyone download the JSON formatter
 
 ## Review the CRUD and the structure of a Server (10 min)
 
@@ -83,10 +81,11 @@ non-relational database (NoSQL): | Data in unstructured collections |
 SQL: | Structured Query Language |
 ORM: | Object-Relational Mapping |
 
+## Warmup (30 min)
 
 ## Break
 
-## Introduce AJAX - history (15 min)
+## Introduce AJAX  (20 min)
 __Goals:__
 - Understand what AJAX is
 - Understand when, where and why AJAX is used
@@ -148,8 +147,9 @@ __Goals:__
   - The XmlHttpRequest object can be used to directly call server-side objects like pages and web services
   - These pages will either save and/or return data
 
+## BREAK (10 Min)
 
-## Go into AJAX code along (15 min)
+## AJAX Exercise (20 min)
   - In order to make an HTTP request to the server using JavaScript, you need an instance of an XMLHttpRequest
   - Next you need to handle the servers response to your request:
     - Tell the HTTP request object which function will handle processing the response
@@ -162,12 +162,8 @@ __Goals:__
   -  3 (interactive)
   -  4 (complete)
 
-## AJAX exercise (30 min)
 
-
-## Break
-
-## Introduce APIs (15 min)
+## Introduce APIs (10 min)
 History of APIs - types of APIs
   - Have everyone install the JSON formatter
   - JSON is very simple to use if correctly structured:
@@ -198,18 +194,20 @@ History of APIs - types of APIs
     - We are still communicating with URLs but instead of receiving markup, like we do with HTML pages, we receive data
       - It can be returned in a variety of forms: JSON, XML, CSV, and others.
 
-## Create 10 task exercises using the OMDB database (15 mins)
+## Create 10 task exercises using the OMDB database (5 mins)
     http://www.omdbapi.com/
     - create searches using the parameters guide on the website
     - have the students try submitting a couple more queries to familiarize with the API.
     - search for their favorite movies, pull in the rotten tomatoes reviews
 
-## API Code along exercise (20 min)
+## API Code along exercise (15 min)
   http://openweathermap.org/api
   Weatherify - have starter code ready to pull
     - Have students walk me through the components that are already in place
 
-## Code on your own (30 min)
+## BREAK  (10 min)
+
+## Build your own API using the Pokedex - Exercise 3 (30 min)
   - Use the Pokemon exercise as an API
   - Create your own requests
   - download hbs form helpers :
@@ -219,8 +217,6 @@ History of APIs - types of APIs
     var hbs = require('hbs');
     require('handlebars-form-helpers').register(hbs.handlebars);
     You have to register the helpers before you can use them in your templates. The register method expects the Handlebars object to be passed in, and an optional config object, for example:
-
-## Building a simple API with Express
 
 
 ## Wrap up and review (5 min)  
