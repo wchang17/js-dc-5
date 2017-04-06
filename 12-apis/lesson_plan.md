@@ -163,14 +163,12 @@ __Goals:__
   -  4 (complete)
 
 ## AJAX exercise (30 min)
-  - Have students go into the exercise1 folder under exercise - Run npm install
-  - Run nodemon or node index.js - should see it running on port 3000
+
 
 ## Break
 
 ## Introduce APIs (15 min)
 History of APIs - types of APIs
-  - **** Maybe I can draw out a timeline on the board? ****
   - Have everyone install the JSON formatter
   - JSON is very simple to use if correctly structured:
     - One of the resources to validate JSON and check if the syntax is correct is [JSON Viewer](http://codebeautify.org/jsonviewer)
@@ -192,7 +190,6 @@ History of APIs - types of APIs
       - You want to delegate this work to a computer so it can be done quickly and accurately.
       - Unfortunately, the characteristics that make websites optimal for humans make them difficult for computers to use. The solution is an API.
 
-  Figure 1. Communicating with a server
 
     - API stands for Application Programming Interface
     - An API is the tool that makes a website's data digestible for a computer.

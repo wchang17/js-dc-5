@@ -42,11 +42,6 @@
 - Way for the client to communicate with the server
 - Doesn't require a page refresh
 
---
-### The History of Ajax
-- Ajax is not a programming language or a tool, but a concept.
-- The term AJAX was not used until 2005, but development had been underway since around 1996
-- More narrowly, it refers to the use of XmlHttpRequest objects to interact with a web server dynamically via JavaScript.
 
 --
 ### The 4 Benefits of AJAX
@@ -64,7 +59,7 @@
 ### 2. Asynchronous Calls
 - Ajax allows you to make Asynchronous calls to a web server
 - The browser can avoid waiting for all data to arrive before allowing the user to act
--       State	Description
+- State Description
       0	The request is not initialized.
       1	The request has been set up.
       2	The request has been sent.
@@ -99,11 +94,6 @@ Exercise 1
 - In 2002 Amazon launched AWS
 - (AWS) allowed third party sites to search and display products from Amazon.com in an XML format.
 
-### The New Frontier
-- Mobile: Foursquare and Instagram
-- March 2009: Foursquare launched at the SXSW interactive festival in Austin, TX.
-- Foursquare is a location-based mobile platform and utilizes APIs to allow developers to deliver a new generation of location aware, API driven applications
-- Web APIs got their start in early e-commerce on the Internet, but without social, a scalable cloud backend and a ubiquitous mobile devices--APIs weren't ready for prime time. In 2012 we reached that points
 
 ### Why APIs?
 - Websites are designed to cater to people's strengths.
