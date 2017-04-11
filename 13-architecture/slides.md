@@ -8,53 +8,44 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 45 min | Warmup / Review  (quick: WTF is jQuery)  |
-| 10 min | Intro to MVC                             |
-| 5  min | Break                                    |
+| 30 min | Homework Review                          |
+| 30 min | Intro to MVC                             |
+| 10 min | Break                                    |
 | 50 min | MVC cont'd                               |
-| 5  min | Break                                    |
-| 20 min | MVC cont'd                               |
-| 30 min | Exercise                                 |
-| 5  min | Closing Questions & Exit                 |
+| 10 min | Break                                    |
+| 50 min | MVC cont'd                               |
+| 5  min | Closing Questions & Exit Tickets         |
 
 ---
 ## Looking Ahead
 
-| Lesson No. |        Topic             |
-| ---------- | -----------------------  |
-|     07     | Intro to the DOM         |
-|     08     | Events                   |
-|   **09**   | **MVC Architecture**     |
-|     10     | Express                  |
-|     11     | CRUD & DBs               |
-|     12     | APIs                     |
-|     13     | Lab #2                   |
+| Lesson No. |        Topic                 |
+| ---------- | ---------------------------- |
+|     07     | Intro to the DOM             |
+|     08     | Events                       |
+|     09     | Templating                   |
+|     10     | Express                      |
+|     11     | Databases & CRUD             |
+|     11     | APIs                         |
+|   **12**   | **Application Architecture** |
+|     13     | Lab #2                       |
+
 
 ---
 ## Homework Review
 
 ---
-## jQuery
-
---
-### jQuery: Pros
-- easy/simple interface for working with the DOM
-- builds jQuery objects with a ton of helpful and easy to use methods
-- truly incredible cross browser support
-
---
-### jQuery: Cons
-- it's huge and slow
-- makes it really difficult to actually learn JavaScript
-- promotes a not great way of thinking about the DOM and building web applications
-
----
-## Warmup Exercise
-Refactor slideshow to respond to events
-
----
 ## MVC
-Model - View - Controller
+
+--
+## Introduction to MVC
+- Model - View - Controller
+- application architecture pattern
+- popularized by Ruby on Rails
+- separation of concerns
+
+--
+## Separation of Concerns
 
 --
 ### Model
@@ -83,76 +74,26 @@ Model - View - Controller
 |             |                  |
 
 ---
-## Views (and Templating)
-A brief sidestep to talk about templating
+## In class exercise
 
---
-### Templating: A Brief Introduction
-- Break up an `html` page into components or partials
-- Dynamically build out entire `html` pages
-- Bring functionality to our markup
-
---
-### Types of Templating Languages/Engines
-3 Flavors of templating:
-- Jade / Pug
-- Nunjucks / Swig ( EJS, sort of )
-- Handlebars / Mustache
-
---
-### Jade / Pug
-```
-h1 This is a Pug template
-h2 By #{author}
-```
-
---
-### Nunjucks / Swig
-```
-<h1> Hello {% name %} </h1>
-```
-
---
-### EJS
-```
-<h1> Hello <% name %>  </h1>
-```
-
---
-### Handlebars / Mustache
-```
-<div class="entry">
-  <h1>{{ title }}</h1>
-  <div class="body">
-    {{ body }}
-  </div>
-</div>
-```
-
---
-### Up and Running with Handlebars
-http://tryhandlebarsjs.com/
-
---
-### Turning Handlebars into Views
-
---
-### Adding a model
-
---
-### Wrapping it all together with a controller
+---
+## Lab #2
+- Prompt at beginning of next Class
+- Due at the start of the class after
 
 ---
 ## Final Projects
 
-- [Assignment](https://github.com/ga-students/JS-DC-3/final-project)
+- [Assignment](https://github.com/ga-students/JS-DC-4/final-project)
 - [Ideas](https://gallery.generalassemb.ly/WDI)
+- [Repository](https://github.com/ga-students/JS-DC-4-FinalProject)
 
 --
 
 ### Final Project Schedule
 
-- Idea Submission: July 18
-- UI Draft: August 2
-- In Class Lab Time: August 16
-- Presentations/Due: August 18
+- Idea Submission: April 4
+-
+- UI Draft: April 18
+- In Class Lab Time: April 27
+- Presentations/Due: May 2
