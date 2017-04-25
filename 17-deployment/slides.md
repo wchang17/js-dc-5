@@ -8,13 +8,17 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 20 min | Wireframes and User Journeys             |
-| 30 min | Deployment                               |
-| 5  min | Break                                    |
-| 50 min | Deployment                               |
-| 5  min | Break                                    |
-| 50 min | Deployment                               |
-| 5  min | Closing Questions & Exit                 |
+| 10 min | Intro to Containers & Microservices      |
+| 45 min | Docker Exercises                         |
+| 10 min | Break                                    |
+| 10 min | Intro to Deployment                      |
+| 10 min | Deploy Dockerfile with Now               |
+| 15 min | Students Deploy Portfolio: Github Pages  |
+| 20 min | Configure AWS + MLab                     |
+| 10 min | Deploy Hello World - AWS                 |
+| 10 min | Break                                    |
+| 20 min | AWS Startup App deploy-along             |
+| 30 min | Deploy Tunr                              |
 
 ---
 ## Looking Ahead
@@ -27,38 +31,38 @@
 |     19     |   Presentations    |
 
 ---
-## User Experience Research
 
---
-### Wireframing
-Sketch and outline the views of our applications
+### Monolithic Applications
 
---
-### How to Wireframe
-- hand drawn symbols for components of our application
-- we can layout these symbols however we like and test out different layouts
-- start broad and work your way in
+Single-tiered software applications
+User interface and data access code are combined into a single program
 
---
-### Our first wireframe
+### Microservices
 
---
-### Now you make one!
+Used to build flexible, independently deployable software systems
 
---
-### User Journeys
-Creating a map of how a user will navigate through and around our applications
+### Containers
 
---
-### Our first user journey
+Containers are a method of operating system virtualization that offer:
 
---
-### Now you make one!
+Environmental Consistency
+Operational Efficiency
+Developer Productivity
+Version Control
 
----
+## Docker
+
+Images
+Containers
+Docker Daemon
+Docker Client
+Docker Hub
+
+## Let's Practice Using Docker
+
 ## Deployment
 
----
+--
 ### Deploying Static Applications
 
 --
@@ -80,14 +84,3 @@ Creating a map of how a user will navigate through and around our applications
 
 --
 ![JS Application](images/Continuous_Delivery_process_diagram.svg.png)
-
-
-### Deploying with Heroku
-
-### Deploying applications
-
-### Building applications
-
-### Running applications on dynos
-
-### Config vars
