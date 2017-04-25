@@ -73,15 +73,21 @@ __Docker Hub__ - A registry of Docker images. You can think of the registry as a
 
 ## Code along with containers
 
-__Flask App__: Follow along (25 minutes)
+__Flask App__: Follow along (20 minutes) Starts at 2.3
 https://github.com/docker/labs/blob/master/beginner/chapters/alpine.md
+- Navigate to the flask-app folder in exercises
+- Create the necessary files and add the code
 
-__Debugging Node.js__: Follow along (15 minutes) Exercise-1
+__Debugging Node.js__: Follow along (10 minutes)
+- Exercise-1
+- All of the necessary files are there, we are going to do a debugging exercise
 https://github.com/docker/labs/blob/master/developer-tools/nodejs-debugging/VSCode-README.md
 
 ## Break
 
-## Deployment - Lecture
+## Deployment - Quick Intro
+
+## Deployment - Now with Dockerfile
 
 Deploy a docker app with Now
 
@@ -91,7 +97,8 @@ https://zeit.co/blog/now-dockerfile
 -npm install -g now
 -mkdir
 -Touch Dockerfile
--Touch index.js
+-Touch index.html
+  -Add some content
 -Add to Dockerfile:
 
 FROM kstaken/apache2
@@ -101,11 +108,15 @@ COPY index.html /var/www
 EXPOSE 80
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 
-Github Pages - 10/15 minutes - Exercise 2
--https://console.aws.amazon.com/billing/home
+- Run 'now' every time you want to deploy
 
+## Deployment - Github Pages
+
+Github Pages - 10/15 minutes - Exercise 2
 - Students follow instructions on github pages to create their own portfolio repos
 https://pages.github.com/
+
+## Deployment - AWS
 
 Intro to AWS - 15 minutes
 - Introduce AWS and explain some of the high level options it offers
@@ -124,17 +135,20 @@ Start up our first deployment: 15 minutes
 - $ eb create dev-env
 - $ eb open
 
-Deploy a more advanced application (we do): 20 minutes
-- Follow the : https://github.com/awslabs/eb-node-express-signup
-- Follow along the instructions within the cloned repo in the exercises folder(eb-node-express-signup): http://docs.aws.amazon.com/gettingstarted/latest/deploy/overview.html
-  - I'm going to walk through all of the steps but they can follow along on the guide if they'd like
 
-Introduce MLab - Have everyone create accounts - Help them integrate it into the tunr solution
+Deploy a more advanced application (we do): 20 minutes
+- Follow along the instructions within the cloned repo in the exercises folder (eb-node-express-signup): http://docs.aws.amazon.com/gettingstarted/latest/deploy/overview.html
+- Students do Setting Up through DynamoDB Table on their own
+- We come back together at Step 2
+
+
+Introduce MLab  - 10 mins
+- Have everyone create accounts - Help them integrate it into the tunr solution
 - Remember you have to create a user every time you make a new db so you can access it in code
-- The port must match the deployment configuraton - 8081 is AWS common
+- The port must match the deployment configuration - 8081 is AWS common
 - Bundle the application files and save to desktop in a compressed file
 
-Deploy the SPA Tunr solution - you do : ~20 minutes
+Deploy the SPA Tunr solution - we do : ~20 minutes
 - Have everyone create a new db instance for Tunr on mlab - save the config info
 - Edit the Exercise-3 file so it has access to their own credentials
 - Open the AWS console: https://us-west-2.console.aws.amazon.com/elasticbeanstalk/home?region=us-west-2#/applications
@@ -142,5 +156,4 @@ Deploy the SPA Tunr solution - you do : ~20 minutes
 - Create new environment
 
 
-## Deploy Tunr or the SPA  solution
-http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-getstarted.html
+## You Do: Deploy Todo App
