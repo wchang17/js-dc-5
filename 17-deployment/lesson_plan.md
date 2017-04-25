@@ -10,7 +10,6 @@
 - Closing Questions / Tying up loose ends
 - Exit Tickets
 
-
 ## Install Docker for Mac or Docker for Windows
 -- https://docs.docker.com/docker-for-mac/install/
 -- https://docs.docker.com/docker-for-windows/install/

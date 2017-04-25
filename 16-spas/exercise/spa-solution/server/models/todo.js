@@ -1,11 +1,12 @@
 var mongoose = require('mongoose')
 var Schema = mongoose.Schema
 
-var Todo = new Schema({
+var TodoSchema = new Schema({
   title: String,
+  description: String,
   isCompleted: Boolean
 })
 
-var Todo = mongoose.model('Todo', Todo)
+var Todo = mongoose.model('Todo', TodoSchema)
 
 module.exports = Todo
