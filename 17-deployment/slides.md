@@ -31,15 +31,21 @@
 |     19     |   Presentations    |
 
 ---
-
+### Development Architecture
+![JS Application](images/Continuous_Delivery_process_diagram.svg.png)
+---
 ### Monolithic Applications
 
 Single-tiered software applications
 User interface and data access code are combined into a single program
 
+---
+
 ### Microservices
 
 Used to build flexible, independently deployable software systems
+
+---
 
 ### Containers
 
@@ -50,6 +56,7 @@ Operational Efficiency
 Developer Productivity
 Version Control
 
+---
 ## Docker
 
 Images
@@ -58,20 +65,16 @@ Docker Daemon
 Docker Client
 Docker Hub
 
+---
 ## Let's Practice Using Docker
 
-
+---
 ## Deployment
 
---
+---
 ### Deploying Static Applications
 
---
-### Static applications/websites
-- all html, css and js is already generated (static)
-- can then be delivered as is
-
---
+---
 ### Application Architecture
 ![JS Application](images/02-fig.jpg)
 
@@ -79,9 +82,9 @@ Docker Hub
 ---
 ### Deploying Dynamic Applications
 ![JS Application](images/dynamic.png)
-
+---
 ### Environments
 ![JS Application](images/CD.png)
 
---
+---
 ![JS Application](images/Continuous_Delivery_process_diagram.svg.png)
