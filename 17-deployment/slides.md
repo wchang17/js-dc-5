@@ -29,8 +29,8 @@
 
 ---
 ### Development Architecture
-![JS Application](images/Continuous_Delivery_process_diagram.svg.png)
----
+![JS Application](images/Microservices_Architecture-1.png)
+
 ### Monolithic Applications
 
 Single-tiered software applications
@@ -48,19 +48,20 @@ Used to build flexible, independently deployable software systems
 
 Containers are a method of operating system virtualization that offer:
 
-Environmental Consistency
-Operational Efficiency
-Developer Productivity
-Version Control
+|    Environmental Consistency    |
+|      Operational Efficiency     |
+|      Developer Productivity     |
+|        Version Control          |
+
 
 ---
 ## Docker
 
-Images
-Containers
-Docker Daemon
-Docker Client
-Docker Hub
+| Images         |
+| Containers     |
+| Docker Daemon  |
+| Docker Client  |
+| Docker Hub     |
 
 ---
 ## Let's Practice Using Docker
