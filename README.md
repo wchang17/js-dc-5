@@ -31,24 +31,24 @@ D. [Class Pass](./assets/class-pass.png) printed out or on your phone
 ### Overview
 |   Class   |                                Title                                |    Date     |
 | --------- | ------------------------------------------------------------------- | ----------- |
-| Lesson 00 | [Installfest](https://ga-students.github.io/js-dc-4/00-installfest) | May 9th |
-| Lesson 01 | [The Command Line & Git](https://ga-students.github.io/js-dc-4/01-command-line)| May 11th |
-| Lesson 02 | [Data Types](https://ga-students.github.io/js-dc-4/02-data-types) | May 16th |
-| Lesson 03 | [Control Flow](https://ga-students.github.io/js-dc-4/03-control-flow) | May 18th |
-| Lesson 04 | [Functions](https://ga-students.github.io/js-dc-4/04-functions)| May 23rd |
-| Lesson 05 | [Objects](https://ga-students.github.io/js-dc-4/05-objects) | May 25th |
-| Lesson 06 | **[Project 1](https://ga-students.github.io/js-dc-4/06-lab)** | May 30th |
-| Lesson 07 | [Intro to DOM](https://ga-students.github.io/js-dc-4/07-intro-to-dom)| June 1st |
-| Lesson 08 | [Events](https://ga-students.github.io/js-dc-4/08-events) | June 6th |
-| Lesson 09 | [Templating & Build Tools](https://ga-students.github.io/js-dc-4/09-templating)| June 8th  |
-| Lesson 10 | [Express](https://ga-students.github.io/js-dc-4/10-express) | June 13th  |
-| Lesson 11 | [CRUD & Databases](https://ga-students.github.io/js-dc-4/11-crud-and-dbs) | June 15th |
-| Lesson 12 | [APIs](https://ga-students.github.io/js-dc-4/12-apis)| June 20th |
-| Lesson 13 | [Application Architecture](https://ga-students.github.io/js-dc-4/13-architecture) | June 22nd |
-| Lesson 14 | [**Project 2** - HackerWall](https://ga-students.github.io/js-dc-4/14-lab02) | June 27th |
-| Lesson 15 | [Single Page Applications](https://ga-students.github.io/js-dc-4/15-spas) | June 29th |
-| Lesson 16 | [Authentication](https://ga-students.github.io/js-dc-4/16-authentication)| July 6th |
-| Lesson 17 | [Deploying Your App](https://ga-students.github.io/js-dc-4/17-deployment) | July 11th |
+| Lesson 00 | [Installfest](https://ga-students.github.io/js-dc-5/00-installfest) | May 9th |
+| Lesson 01 | [The Command Line & Git](https://ga-students.github.io/js-dc-5/01-command-line)| May 11th |
+| Lesson 02 | [Data Types](https://ga-students.github.io/js-dc-5/02-data-types) | May 16th |
+| Lesson 03 | [Control Flow](https://ga-students.github.io/js-dc-5/03-control-flow) | May 18th |
+| Lesson 04 | [Functions](https://ga-students.github.io/js-dc-5/04-functions)| May 23rd |
+| Lesson 05 | [Objects](https://ga-students.github.io/js-dc-5/05-objects) | May 25th |
+| Lesson 06 | **[Project 1](https://ga-students.github.io/js-dc-5/06-lab)** | May 30th |
+| Lesson 07 | [Intro to DOM](https://ga-students.github.io/js-dc-5/07-intro-to-dom)| June 1st |
+| Lesson 08 | [Events](https://ga-students.github.io/js-dc-5/08-events) | June 6th |
+| Lesson 09 | [Templating & Build Tools](https://ga-students.github.io/js-dc-5/09-templating)| June 8th  |
+| Lesson 10 | [Express](https://ga-students.github.io/js-dc-5/10-express) | June 13th  |
+| Lesson 11 | [CRUD & Databases](https://ga-students.github.io/js-dc-5/11-crud-and-dbs) | June 15th |
+| Lesson 12 | [APIs](https://ga-students.github.io/js-dc-5/12-apis)| June 20th |
+| Lesson 13 | [Application Architecture](https://ga-students.github.io/js-dc-5/13-architecture) | June 22nd |
+| Lesson 14 | [**Project 2** - HackerWall](https://ga-students.github.io/js-dc-5/14-lab02) | June 27th |
+| Lesson 15 | [Single Page Applications](https://ga-students.github.io/js-dc-5/15-spas) | June 29th |
+| Lesson 16 | [Authentication](https://ga-students.github.io/js-dc-5/16-authentication)| July 6th |
+| Lesson 17 | [Deploying Your App](https://ga-students.github.io/js-dc-5/17-deployment) | July 11th |
 | Lesson 18 | **Project 3** Your App                                  | July 13th |
 | Lesson 19 | Final Project Presentations                                         | July 18th |
 
@@ -299,5 +299,3 @@ Today's class goes in depth on event driven development, responding to browser/u
 ### Class 19: Presentations
 Students will have 10 minutes to present their final projects. See the [presentation requirements here](20-presentations/requirements.md)
 
-### Class 19+: Profit
-Students will $$$
