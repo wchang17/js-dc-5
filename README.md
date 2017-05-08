@@ -31,26 +31,26 @@ D. [Class Pass](./assets/class-pass.png) printed out or on your phone
 ### Overview
 |   Class   |                                Title                                |    Date     |
 | --------- | ------------------------------------------------------------------- | ----------- |
-| Lesson 00 | [Installfest](https://ga-students.github.io/js-dc-4/00-installfest) | February 21st |
-| Lesson 01 | [The Command Line & Git](https://ga-students.github.io/js-dc-4/01-command-line)| February 23rd |
-| Lesson 02 | [Data Types](https://ga-students.github.io/js-dc-4/02-data-types) | February 28th |
-| Lesson 03 | [Control Flow](https://ga-students.github.io/js-dc-4/03-control-flow) | March 2nd |
-| Lesson 04 | [Functions](https://ga-students.github.io/js-dc-4/04-functions)| March 7th |
-| Lesson 05 | [Objects](https://ga-students.github.io/js-dc-4/05-objects) | March 9th |
-| Lesson 06 | **[Project 1](https://ga-students.github.io/js-dc-4/06-lab)** | March 14th |
-| Lesson 07 | [Intro to DOM](https://ga-students.github.io/js-dc-4/07-intro-to-dom)| March 16th |
-| Lesson 08 | [Events](https://ga-students.github.io/js-dc-4/08-events) | March 21st |
-| Lesson 09 | [Templating & Build Tools](https://ga-students.github.io/js-dc-4/09-templating)| March 23rd  |
-| Lesson 10 | [Express](https://ga-students.github.io/js-dc-4/10-express) | March 28th  |
-| Lesson 11 | [CRUD & Databases](https://ga-students.github.io/js-dc-4/11-crud-and-dbs) | March 30th |
-| Lesson 12 | [APIs](https://ga-students.github.io/js-dc-4/12-apis)| April 4th |
-| Lesson 13 | [Application Architecture](https://ga-students.github.io/js-dc-4/13-architecture) | April 6th |
-| Lesson 14 | [**Project 2** - HackerWall](https://ga-students.github.io/js-dc-4/14-lab02) | April 11th |
-| Lesson 15 | [Single Page Applications](https://ga-students.github.io/js-dc-4/15-spas) | April 13th |
-| Lesson 16 | [Authentication](https://ga-students.github.io/js-dc-4/16-authentication)| April 18th |
-| Lesson 17 | [Deploying Your App](https://ga-students.github.io/js-dc-4/17-deployment) | April 20th |
-| Lesson 18 | **Project 3** Your App                                  | April 25th |
-| Lesson 19 | Final Project Presentations                                         | April 27th |
+| Lesson 00 | [Installfest](https://ga-students.github.io/js-dc-4/00-installfest) | May 9th |
+| Lesson 01 | [The Command Line & Git](https://ga-students.github.io/js-dc-4/01-command-line)| May 11th |
+| Lesson 02 | [Data Types](https://ga-students.github.io/js-dc-4/02-data-types) | May 16th |
+| Lesson 03 | [Control Flow](https://ga-students.github.io/js-dc-4/03-control-flow) | May 18th |
+| Lesson 04 | [Functions](https://ga-students.github.io/js-dc-4/04-functions)| May 23rd |
+| Lesson 05 | [Objects](https://ga-students.github.io/js-dc-4/05-objects) | May 25th |
+| Lesson 06 | **[Project 1](https://ga-students.github.io/js-dc-4/06-lab)** | May 30th |
+| Lesson 07 | [Intro to DOM](https://ga-students.github.io/js-dc-4/07-intro-to-dom)| June 1st |
+| Lesson 08 | [Events](https://ga-students.github.io/js-dc-4/08-events) | June 6th |
+| Lesson 09 | [Templating & Build Tools](https://ga-students.github.io/js-dc-4/09-templating)| June 8th  |
+| Lesson 10 | [Express](https://ga-students.github.io/js-dc-4/10-express) | June 13th  |
+| Lesson 11 | [CRUD & Databases](https://ga-students.github.io/js-dc-4/11-crud-and-dbs) | June 15th |
+| Lesson 12 | [APIs](https://ga-students.github.io/js-dc-4/12-apis)| June 20th |
+| Lesson 13 | [Application Architecture](https://ga-students.github.io/js-dc-4/13-architecture) | June 22nd |
+| Lesson 14 | [**Project 2** - HackerWall](https://ga-students.github.io/js-dc-4/14-lab02) | June 27th |
+| Lesson 15 | [Single Page Applications](https://ga-students.github.io/js-dc-4/15-spas) | June 29th |
+| Lesson 16 | [Authentication](https://ga-students.github.io/js-dc-4/16-authentication)| July 6th |
+| Lesson 17 | [Deploying Your App](https://ga-students.github.io/js-dc-4/17-deployment) | July 11th |
+| Lesson 18 | **Project 3** Your App                                  | July 13th |
+| Lesson 19 | Final Project Presentations                                         | July 18th |
 
 
 ## Classes
