@@ -14,7 +14,7 @@ Once you're upstairs, tell the folks at the front desk you're here for your firs
 
 Zakk: Sundays from 3:00 - 5:00
 
-Christine: Wednesdays from 5:30 to 7:30
+Christine: Tuesdays & Thursdays from 5:30 to 6:30 
 
 ## What to Bring
 
