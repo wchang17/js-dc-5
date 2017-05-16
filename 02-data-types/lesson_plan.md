@@ -30,7 +30,21 @@
   - instead of sentences and paragraphs, we have expressions and statements
   - instead of subjects and verbs, we have values and operators
 
+## Variables
+  - variables are identifiers for data
+  - can think of them as boxes we store data in
+  - functional and practical purpose:
+    - need some way to store data in memory so we can reuse it, perform calculations and other operations on it
+    - need to give our data meaning
+      - a 4 is no longer just a 4 but the number of people sitting in the front row
+      - a string is no longer just a string but someone's name
+
+### Type Checking
+  - We can check the type of a variable by using `typeof()`, which returns a string for the variable's type (i.e. `'number'`, `'string'`)
+
 ## Introduction to Data Types
+**Write the below out as a mind map on the baord**
+
 - At the most generalized level of discussing programming, all we're doing is moving and manipulating data.
 
 ### What is a "Data Type"
@@ -164,6 +178,17 @@ Math.floor( Math.random() * ( max - min + 1 ) + min );
 'I have ' + 20 + ' dogs!'
 ```
 
+### String Interpolation & Templates
+- new in latest version of JavaScript
+- function a lot like strings
+- make with the backtick character
+
+```
+
+`test`
+
+```
+
 #### String Methods
 ```
 'hello'.toUpperCase()
@@ -230,48 +255,6 @@ console.log( 4 < 2 ) // => false
 Combining them
 ```
 console.log( !( 4 < 2) ) // => true
-```
-
-## Variables
-- stepping away from data types into using our data
-- want to store our data somewhere where we can reuse it and perform calculations and other operations on it
-
-Gives meaning to our data:
-- a 4 is no longer just a 4 but the number of people sitting in the front row
-- a string is no longer just a string but someone's name
-
-- Two parts to creating a variable
-    - declaring it and
-    - assigning it a value
-
-```
-var myFirstVariable
-myFirstVariable = 'Hello World'
-```
-
-- If we just declare a variable, it's value is `undefined`
-
-```
-var myFirstVariable = 'Hello World'
-```
-
-- call a variable to get it's value, which we do by referencing it's name
-
-### Type Checking
-- We can check the type of a variable by using `typeof()`, which returns a string for the variable's type (i.e. `'number'`, `'string'`)
-
-```
-var a = 1
-console.log( typeof( a ) ) // => 'number'
-
-var b = 'hey'
-console.log( typeof( b ) ) // => 'string'
-
-var c = true
-console.log( typeof( c ) ) // => 'boolean'
-
-var d
-console.log( typeof( d ) ) // => 'undefined'
 ```
 
 ### Type Conversion

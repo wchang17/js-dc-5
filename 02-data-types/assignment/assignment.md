@@ -25,14 +25,13 @@ To take user input in a command line program like `distance.js`, we use node's `
 
 Test it with `node distance.js 1,3 10,15`
 
-*hint: maybe check the type of the arguments when they're in the `process.argv` array . . .*
+*hint: maybe check the `typeof` for arguments when they're in the `process.argv` array . . .*
 
 *hint 2: I wonder if there's a way to split a string into multiple parts . . .*
 
 ## Extra
 1. Read more about truthy and falsey in JS [here](https://dorey.github.io/JavaScript-Equality-Table/)
-2. The latest major version of javascript was released in 2015. Most of the new features have been incorporated in node, but browser compatibility is still spotty. We will be adding extra reading for es2015, but will otherwise be learning ES5 (the standard version of javascript). If you would like to see the features added in es2015 with regards to everything we learned today, I recommend the following reading:
-* [Variables](https://www.sitepoint.com/preparing-ecmascript-6-let-const/)
-* [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-* [String Methods](https://www.sitepoint.com/preparing-ecmascript-6-new-string-methods/)
-* [Number Methods](https://www.sitepoint.com/preparing-ecmascript-6-new-number-methods/)
+2.  [Variables](https://www.sitepoint.com/preparing-ecmascript-6-let-const/)
+3. [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+4. [String Methods](https://www.sitepoint.com/preparing-ecmascript-6-new-string-methods/)
+5. [Number Methods](https://www.sitepoint.com/preparing-ecmascript-6-new-number-methods/)

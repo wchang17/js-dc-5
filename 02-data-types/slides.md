@@ -9,13 +9,12 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 10 min | Review: Git & Terminal                   |
-| 40 min | Data Types                               |
+| 20 min | Review: Git & Terminal                   |
+| 30 min | Data Types                               |
 | 10 min | Break                                    |
-| 30 min | Data Types (cont'd) & Variables          |
-| 30 min | Intro Arrays                             |
+| 50 min | Data Types (cont'd)                      |
 | 10 min | Break                                    |
-| 40 min | Our first Script!                        |
+| 40 min | Intro Arrays                             |
 | 5  min | Check out                                |
 
 ---
@@ -28,43 +27,19 @@
 - Go around your group answering the question or explaining what the command does
 
 --
-### `pwd`
-
---
-### How to I create a folder through the command line?
-
---
 ### What is Git and what is it used for?
 
 --
 ### How do I start a Git project?
 
 --
-### `rm -rf test-directory`
-
---
 ### Describe `local`, `remote`, and `origin` in Git
-
---
-### `mv test-directory/* dir02/`
-
---
-### What is a relative path?
 
 --
 ### How do we save our work in Git? (2 parts!)
 
 --
-### `touch test.js`
-
---
-### What does `git add .` do?
-
---
-### `cp test-directory/* dir02/`
-
---
-### What is an absolute path?
+### What does `git add .` do? How does it compare to `git add -A` or `git add someFile.js`?
 
 --
 ### What is Forking on GitHub?
@@ -87,6 +62,9 @@ Great job!
 |     05     | Objects        |
 
 ---
+## Variables
+
+---
 ## Introduction to Data Types
 
 --
@@ -97,118 +75,11 @@ Great job!
 - What values constitute this data type?
 - What operations can we perform on this data type?
 
----
-## Numbers
-
 --
-### Numeric values
-`1`, `-6`, `9.35`
-
---
-### Types of Numeric Values:
-1. Integers
-2. Floats
-
---
-### Use Cases
-- numeric data
-- score in a game
-- position on the screen
-
---
-### Operators
-Two Types of Numeric Operators:
-1. Arithmetic Operators
-2. Special Number Operators
-
---
-### Arithmetic Operators
-`+`, `-`, `/`, `*`, `%`,
-
---
-### Special Number Operators
-- live inside the special `Math` object
-- `Math.pow(3, 2) => 9`
-- `Math.sqrt(4) => 2`
-
---
-### Done with Numbers!
-
----
-## Strings
-
---
-### String Values
-`"This is a string"` <br />
-`'This is another string'` <br />
-
---
-### Use Cases
-- Names, addresses, other text data
-- Content like blog posts and comments
-- User input
-
---
-### String Operations
-1. Concatenation
-2. String methods
-
---
-### String Concatenation
-Adding two strings together: <br />
-`'hello ' + 'world!'`
-
---
-### String Methods
-Methods on the string object <br />
-`'hello'.toUpperCase()` <br />
-`'wOrLd'.toLowerCase()` <br />
-
---
-### Done with Strings!
-
----
-## Booleans
-
---
-### Boolean Values
-Only two: `true` and `false`
-
---
-## Boolean Operators
-(Also called Logical Operators) <br>
-`&&`, `||`, `!`
-
---
-### Evaluated values
-expressions can evaluate to either be truthy or falsey <br />
-`1 == 1 // => true` <br />
-`4 < 2 // => false` <br />
-
---
-### Control Flow
-```
-if ( person.isTall ) {
-  duckToAvoidHittingHeadOnStuff()
-} else {
-  continueNotWorryingAboutDuckingButStillBeJealousOfTallPeople()
-}
-```
-
---
-### Use Cases
-- settings
-- on/off, right/wrong
-
---
-### Done with Booleans!
-
----
-### Variables
-
---
-### Variables
-Let us save our data in memory so we can access and use it in our programs
+### Data Types
+- Numbers
+- Strings
+- Booleans
 
 ---
 ## Arrays
