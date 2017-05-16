@@ -15,10 +15,10 @@
 
 // console.log( [1, 2, 3, 4, 5] ) // => [1, 2, 3, 4, 5]
 
-// var myFavoriteNumbers = [1, 2, 3, 4, 5]
+// const myFavoriteNumbers = [1, 2, 3, 4, 5]
 // console.log( myFavoriteNumbers ) // => [1, 2, 3, 4, 5]
 
-// var myOnlyFriends = ['Moe', 'Larry', 'Curly']
+// const myOnlyFriends = ['Moe', 'Larry', 'Curly']
 // console.log( myOnlyFriends ) // => ['Moe', 'Larry', 'Curly']
 
 // Array Indexes

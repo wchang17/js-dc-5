@@ -3,7 +3,8 @@
 
   1. String Values
   2. String Concatenation
-  3. String Operations
+  3. String Interpolation
+  4. String Operations
 */
 
 /*
@@ -19,6 +20,7 @@
 // console.log( "hello 'world', hello" )
 // console.log( "hello "world", hello" )
 // console.log( 'hello 'world', hello' )
+// console.log( `Hello world` )
 
 //
 // 2. String Concatenation
@@ -31,7 +33,13 @@
 // console.log( 20 + '16' )
 
 //
-// 3. String Methods
+// 3. String Interpolation
+//
+// let myName = 'Zakk'
+// console.log( `Hi! My name is - What? My name is ${myName}!` )
+
+//
+// 4. String Methods
 //
 
 // toUpperCase
@@ -46,35 +54,4 @@
 
 // 1. Concatenate your first and last name into a single string and console.log it
 // 2. Using `.charAt()` concatenate the 3rd, 5th and 1st letters of your full name together and console.log it
-
-
-
-/**
- * ES2015
- *
- * The latest specification of javascript introduced something called string
- * interpolation. String interpolation is common in many other programming
- * languages, like Ruby and Python, as a way of working with variables and
- * dynamic values that you wish to include in a string message.
- *
- * You can see the comparison between es5 and es2015 here:
- */
-
-// var toIncludeInString = 'Zakk'
-//
-// // ES5
-// console.log( 'My name is ' + toIncludeInString ) // => 'My name is Zakk'
-//
-// // ES2015 with string interpolation
-// console.log( `My name is ${toIncludeInString}` ) // => 'My name is Zakk'
-
-/**
- * The results of both console.log's is the same. I think the es2015 method is
- * easier to read. Which you use is totally up to you!
- */
-
-/**
- * ES2015 also introduced a few new string methods, including `.startsWith()`,
- * `.endsWith()`, `.includes()`, and `.repeate()` - all of which you can read about here:
- * http://exploringjs.com/es6/ch_core-features.html#_new-string-methods
- */
+// 3. Create two variables: one for your first name and one for your last name. Use string templates and interpolate both, console.log the result so it follows this pattern: 'My name is FIRST NAME LAST NAME. I usually go by FIRST NAME. If my mom is mad, she called my LAST NAME.'
