@@ -32,6 +32,9 @@ Test it with `node distance.js 1,3 10,15`
 ## Extra
 1. Read more about truthy and falsey in JS [here](https://dorey.github.io/JavaScript-Equality-Table/)
 2.  [Variables](https://www.sitepoint.com/preparing-ecmascript-6-let-const/)
-3. [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-4. [String Methods](https://www.sitepoint.com/preparing-ecmascript-6-new-string-methods/)
-5. [Number Methods](https://www.sitepoint.com/preparing-ecmascript-6-new-number-methods/)
+3. [String Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+4. [Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+5. [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+6. [Template Strings](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings)
+7. [String Methods](https://www.sitepoint.com/preparing-ecmascript-6-new-string-methods/) (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+8. [Number Methods](https://www.sitepoint.com/preparing-ecmascript-6-new-number-methods/)
