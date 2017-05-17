@@ -57,3 +57,11 @@
 // console.log( Math.random() ) // => 0.229375290430
 
 // How might I get a random number between 0 and 10?
+// console.log( 'Random Number:' )
+// console.log( Math.round(Math.random()* 10) ) 
+
+// Generating a random number with Math.floor ( Math.random() * (max - min + 1) + min)
+const min = 27
+const max = 75
+const randomNumber = Math.floor ( Math.random() * (max - min + 1) + min)
+console.log(randomNumber)
