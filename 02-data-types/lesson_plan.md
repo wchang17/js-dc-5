@@ -43,7 +43,7 @@
   - We can check the type of a variable by using `typeof()`, which returns a string for the variable's type (i.e. `'number'`, `'string'`)
 
 ## Introduction to Data Types
-**Write the below out as a mind map on the baord**
+**Write the below out as a mind map on the board**
 
 - At the most generalized level of discussing programming, all we're doing is moving and manipulating data.
 
