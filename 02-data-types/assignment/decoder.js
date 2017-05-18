@@ -5,6 +5,8 @@
 
  // Your code here
 
+const code = []
+
  /**
   * Question 2
   * Add the following characters to the end of the code array:
@@ -15,6 +17,8 @@
 
 // Your code here
 
+console.log( code.push( 'x', 'u', 's', 'a', 'e', 'l', 'p', 'e', 'e', 'n', 'i', 't', 'l', 'a', 'v', 'o', 'x', 'e', 'r', 'o', 'm', 'c') )
+
 /**
  * Question 3
  * Remove the first and last elements of the array.
@@ -23,12 +27,17 @@
 
 // Your code here
 
+// console.log( code.shift() )
+// console.log( code.pop() )
+
 /**
  * Question 4
  * Reverse the array.
  */
 
 // Your code here
+
+// console.log( code.reverse() )
 
 /**
  * Question 5
@@ -38,6 +47,9 @@
 
 // Your code here
 
+// console.log( code.splice(21, 21, 'e') )
+// console.log( code )
+
 /**
  * Question 6
  * Replace the 5th element and 14th element with space characters.
@@ -46,6 +58,9 @@
 
 // Your code here
 
+// console.log( code.splice(4, 3, " ") )
+// console.log( code.splice(13, 12, " ") )
+
 /**
  * Question 7
  * Join the array with an empty String in between each character and log the
@@ -53,3 +68,6 @@
  */
 
  // Your code here
+
+ console.log( code.join( " " ) )
+
