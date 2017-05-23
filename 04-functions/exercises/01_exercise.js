@@ -22,3 +22,14 @@ Use both of your functions a few times. If there's time, write
 functions that add or subtract more than 1 from myNumber.
 
 */
+
+// Declare a variable called myNumber:
+
+
+// Declare a function called addOne:
+
+
+// Declare a function called subtractOne:
+
+
+// Use addOne and subtractOne a few times:
