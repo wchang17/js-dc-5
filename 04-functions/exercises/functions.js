@@ -62,6 +62,13 @@
 //
 // addNumbers( 1, 2 )
 
+// Setting default values
+// function addNumbers( numOne, numTwo = 1 ) {
+//   console.log( numOne + numTwo )
+// }
+// 
+// addNumbers( 1, 2 )
+// addNumbers( 1 )
 
 /*
 
