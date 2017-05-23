@@ -20,7 +20,7 @@ let i = 1 // create our counter for our loop
 while ( fibonacci[ fibonacci.length - 1 ] < threshold ) {
 
   // push in the next number in the sequence and increment our counter
-  let nextNumber = fibonacci[ i ] + fibonacci[ i - 1] 
+  let nextNumber = fibonacci[ i ] + fibonacci[ i - 1]
   console.log( nextNumber )
   fibonacci.push( nextNumber )
   ++i
@@ -45,6 +45,3 @@ for (let i = 0; i <= fibonacci.length; i++) {
 
 // finally, show us the total!
 // console.log( total )
-
-
-
