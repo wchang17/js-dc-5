@@ -6,8 +6,11 @@ Write a function that `console.log`s 'Hello World' and call it.
 
 */
 
+// function myFunction() {
+// 	console.log('Hello World')
+// }
 
-
+// myFunction()
 
 
 /*
@@ -20,5 +23,23 @@ from myNumber.
 
 Use both of your functions a few times. If there's time, write
 functions that add or subtract more than 1 from myNumber.
-
 */
+
+
+let myNumber = 10
+
+function addOne() {
+console.log( myNumber += 1 )
+}
+
+
+function subOne() {
+console.log( myNumber - 1 )
+}
+
+// let subOne = () => {
+	// console.log( myNumber-- )
+// }
+
+
+addOne()

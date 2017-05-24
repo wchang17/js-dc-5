@@ -10,3 +10,16 @@ Call both functions twice, passing in different numbers as arguments
 each time.
 
 */
+
+function addNumbers( num1, num2 ) {
+	console.log(num1 + num2)
+}
+
+function subNumbers( num1, num2 ) {
+	console.log(num1 - num2)
+}
+
+addNumbers(4, 5)
+addNumbers(9, 10)
+subNumbers(12, 5)
+subNumbers(29, 3)
