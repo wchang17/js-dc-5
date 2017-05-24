@@ -15,6 +15,12 @@ to a variable and `console.log` it!
 
 // console.log(myNum)
 
+// if you wanted to allow any number of parameters
+// function average(...nums) {
+// 	let total = nums.reduce((total, num) => total + num)
+// 	return total / nums.length
+// }
+
 
 /*
 
