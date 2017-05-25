@@ -4,8 +4,7 @@ Card Game of War Exercise Part 1.
 
 */
 
-var suits = ['hearts', 'clubs', 'spades', 'diamonds']
-var ranks = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king']
+
 
 /*
 
@@ -20,9 +19,23 @@ deckOfCards.
 
 */
 
+	var suits = ['hearts', 'clubs', 'spades', 'diamonds']
+	var ranks = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king']
 
+function createDeck(suits, ranks) {
+	let combos = []
 
+	for(let i=0; i < suits.length; i++) {
+		for(let j=0; j < ranks.length; j++) {
+			combos.push( ranks[j] + ' of ' + suits[i]) 
+		}
+	}
+	return combos
 
+}
+
+let deckCombos = createDeck(suits, ranks)
+// console.log(deckCombos)
 /*
 
 Write a function called getRandomCard that will return one random
@@ -33,8 +46,13 @@ Don't worry about removing the card from deckOfCards.
 */
 
 
+function getRandomCard(deck) {
+	let rand = Math.floor(Math.random() * deck.length)
+	return deck[rand]
+}
 
-
+let randomCard = getRandomCard(deckCombos)
+// console.log(randomCard)
 /*
 
 Write a function called dealHand that takes a number as it's only
@@ -48,8 +66,21 @@ the cards as an array.
 
 */
 
+function dealHand(handLength = 1, deck) {
+	let hand 
+	if ( handLength===1) {
+		hand = getRandomCard(deck)
+	} else {
+		hand = []
+		for( let i=0; i < handLength; i++) {
+			hand.push( getRandomCard( deck ) )
+			}
+		} 
+	return hand
 
-
+}
+// console.log( dealHand(null, deckCombos ))
+// console.log (7, deckCombos)
 
 /*
 
@@ -59,7 +90,10 @@ initialize them as empty arrays.
 Deal both playerOneCards and playerTwoCards 7 cards each.
 
 */
-
+let playerOne = []
+let playerTwo = []
+playerOne = dealHand ( 7, deckCombos )
+playerTwo = dealHand ( 7, deckCombos )
 
 
 
@@ -70,8 +104,10 @@ array and prints each card.
 
 */
 
-
-
+function showHand(hand) {
+	console.log( 'Your Cards: ' + hand)
+}
+showHand( playerOne )
 
 /*
 
