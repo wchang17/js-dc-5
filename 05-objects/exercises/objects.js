@@ -73,21 +73,15 @@ executed before moving on!
  * Looping Over an Object
  */
 
-// let o = {
-//   a: 1,
-//   b: 2, 
-//   c: 3
+// let testObject = {
+  // a: 1,
+  // b: 2, 
+  // c: 3
 // }
 // // Get the object keys
 // console.log( Object.keys( o ) ) // =? ['a', 'b', 'c']
 // 
 // Object.keys( o ).forEach(prop => console.log(`${ prop }: ${ o[prop] }`))
-
-/*
- * Deconstructing an object
- */
-
-// console.log( ...o )
 
 
 /*
