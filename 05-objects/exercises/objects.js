@@ -16,13 +16,11 @@ executed before moving on!
 
 
 /*
+ * 1. Anatomy of an Object
+ */
 
-1. Anatomy of an Object
-
-*/
-
-// Declaring our first object
-// var Person = {
+// // Declaring our first object
+// const Person = {
 //   'first name': 'Zakk',
 //   lastName: 'Fleischmann',
 //   favoriteColors: 'green',
@@ -38,12 +36,10 @@ executed before moving on!
 
 
 /*
+ * 2. Working with Objects
+ */
 
-2. Working with Objects
-
-*/
-
-// Getting values from our object
+// // Getting values from our object
 // Person['first name'] // Bracket notation
 // Person.lastName // Dot notation
 
@@ -58,25 +54,39 @@ executed before moving on!
 // Person.sayHello()
 
 // Creating new methods
-// Person.grow = function( inches ) {
-//   var currentHeight = Person.height.feet * 12 + Person.height.inches + inches
-//
+// Person.grow = function( inches = 2 ) {
+//   let currentHeight = Person.height.feet * 12 + Person.height.inches + inches
+// 
 //   Person.height = {
 //     feet: Math.floor( currentHeight / 12 ),
 //     inches: currentHeight % 12
 //   }
-//
+// 
 // }
-//
+// 
 // console.log( Person.height )
 // console.log( Person.grow( 1 ) )
 // console.log( Person.height )
+// 
 
 /*
+ * Looping Over an Object
+ */
 
-2. JSON
+// let testObject = {
+  // a: 1,
+  // b: 2, 
+  // c: 3
+// }
+// // Get the object keys
+// console.log( Object.keys( o ) ) // =? ['a', 'b', 'c']
+// 
+// Object.keys( o ).forEach(prop => console.log(`${ prop }: ${ o[prop] }`))
 
-*/
+
+/*
+ * 2. JSON
+ */
 
 // var jsonData = {
 //   "Foods": [
@@ -90,137 +100,27 @@ executed before moving on!
 
 
 /*
+ * 4. Object Oriented Programming 
+ */
 
-4. Object Oriented Programming
+class Car {
 
-*/
-
-// Part 1
-// var Car = {
-//   model: '',
-//   make: '',
-//   year: '',
-//   color: '',
-//   engineStart: false,
-//   turnOn: function() {
-//     this.engineStart = true
-//   },
-//   turnOff: function() {
-//     this.engineStart = false
-//   },
-//   drive: {
-//     forward: function() { console.log( 'drive forward' ) },
-//     left: function() { console.log( 'drive left' ) },
-//     right: function() { console.log( 'drive right' ) },
-//     reverse: function() { console.log( 'drive reverse' ) }
-//   }
-// }
-
-// Part 2
-function Car ( model, make, year, color ) {
-
-  this.model = model
-  this.make = make
-  this.year = year
-  this.color = color
-  this.engineStart = false
-
-  this.turnOn = function() {
-    return this.engineStart = true
+  constructor( make, model ) {
+    this.make = make
+    this.model = model
+    this.gears = ['P', 'N', 'R', 'D']
+    this.currentGear = this.gears[ 0 ]
   }
 
-  this.turnOff = function() {
-    return this.engineStart = false
-  }
+  shift ( gear = 'P' ) {
+    // Check to make sure the passed in gear is a real gear:
+    if ( this.gears.indexOf( gear ) < 0 ) { gear = 'P'  }
 
-  this.drive = {
-    forward: function() { console.log( 'drive forward' )},
-    left: function() { console.log( 'drive left' )},
-    right: function() { console.log( 'drive right' )},
-    reverse: function() { console.log( 'drive reverse' )}
+    // if it is, then set the currentGear property
+    this.currentGear = gear
   }
 
 }
 
-var MyCarolla = new Car('Carolla', 'Toyota', 2016, 'Red' )
-
-var MyPrius = new Car()
-MyPrius.model = 'Prius'
-MyPrius.make = 'Toyota'
-MyPrius.year = 2009
-MyPrius.color = 'Grey'
-
-console.log( MyCarolla )
-console.log( MyPrius )
-
-// Part 3
-// var Car = function( model, make, year, color ) {
-//
-//   return {
-//     model: model,
-//     make: make,
-//     year: year,
-//     color: color,
-//     engineStart: false,
-//     turnOn: function() {
-//       Car.engineStart = true
-//       console.log('engine is now on')
-//     },
-//     turnOff: function() {
-//       Car.engineStart = false
-//       console.log('engine is now off')
-//     },
-//     drive: {
-//       forward: function() { console.log( 'drive forward' )},
-//       left: function() { console.log( 'drive left' )},
-//       right: function() { console.log( 'drive right' )},
-//       reverse: function() { console.log( 'drive reverse' )}
-//     }
-//   }
-// }
-//
-// var MyCarolla = Car( 'Carolla', 'Toyota', 2016, 'Red' )
-// var MyPrius = Car( 'Prius', 'Toyota', 2009, 'Grey' )
-//
-// console.log( MyCarolla.turnOn() )
-// console.log( MyCarolla.engineStart )
-//
-// console.log( MyPrius.turnOn() )
-// console.log( MyPrius.engineStart )
-//
-// console.log( Car )
-
-// Part 4
-// var Car = function( model, make, year, color ) {
-//
-//   return {
-//     model: model,
-//     make: make,
-//     year: year,
-//     color: color,
-//     engineStart: false,
-//     turnOn: function() {
-//       this.engineStart = true;
-//       console.log('engine is now on');
-//     },
-//     turnOff: function() {
-//       this.engineStart = false;
-//       console.log('engine is now off');
-//     },
-//     drive: {
-//       forward: function() { console.log( 'drive forward' )},
-//       left: function() { console.log( 'drive left' )},
-//       right: function() { console.log( 'drive right' )},
-//       reverse: function() { console.log( 'drive reverse' )}
-//     }
-//   }
-// }
-//
-// var MyCarolla = new Car( 'Carolla', 'Toyota', 2016, 'Red' )
-// var MyPrius = new Car( 'Prius', 'Toyota', 2009, 'Grey' )
-//
-// console.log( MyCarolla.turnOn() )
-// console.log( MyCarolla.engineStart )
-//
-// console.log( MyPrius.turnOn() )
-// console.log( MyPrius.engineStart )
+const zakksCar = new Car("Toyota", "Carola")
+const christinesCar = new Car("Lamborghini", "Aventador")

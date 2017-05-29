@@ -16,3 +16,38 @@
  * 5. take the square root of the sum of step 4
  *
  */
+
+// let x1, x2, y1, y2
+// x1 = 1
+// y1 = 3
+//
+// x2 = 10
+// y2 = 15
+//
+// let deltaX = x2 - x1
+// let deltaY = y2 - y1
+//
+// let squareX = Math.pow(deltaX, 2) // deltaX * deltaX
+// let squareY = Math.pow(deltaY, 2)
+//
+// let sum = squareX + squareY
+//
+// let total = Math.sqrt( sum )
+//
+// console.log( total )
+
+console.log( 'process.arg', process.argv );
+
+let coord1 = process.argv[2].split(',')
+let coord2 = process.argv[3].split(',')
+
+console.log( 'coords', coord1, coord2)
+
+let x1 = parseInt( coord1[0] )
+let y1 = parseInt( coord1[1] )
+
+let x2 = parseInt( coord2[0] )
+let y2 = parseInt( coord2[1] )
+
+console.log('coord 1', x1, y1)
+console.log('coord 2', x2, y2)

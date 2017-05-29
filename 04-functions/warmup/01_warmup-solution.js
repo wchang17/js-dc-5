@@ -10,29 +10,32 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 */
 
 // start things off with our fibonacci sequence with the first 2 values in it
-var fibonacci = [1, 2]
-// var threshold = 100 // terms whose value is less than 100
-var threshold = 4000000 // terms whose value is less than 4 million
+let fibonacci = [1, 2]
+let threshold = 10 // terms whose value is less than 10
+// let threshold = 4000000 // terms whose value is less than 4 million
 
-var i = 1 // create our counter for our loop
+let i = 1 // create our counter for our loop
 
 // while the last item in the array is less than our threshold
 while ( fibonacci[ fibonacci.length - 1 ] < threshold ) {
 
   // push in the next number in the sequence and increment our counter
-  fibonacci.push( fibonacci[ i ] + fibonacci[ i - 1] )
-  i++
+  let nextNumber = fibonacci[ i ] + fibonacci[ i - 1]
+  console.log( nextNumber )
+  fibonacci.push( nextNumber )
+  ++i
 
 }
 
 // uncomment to see our fibonacci sequence
-// console.log( fibonacci.length, fibonacci )
+console.log( fibonacci.length, fibonacci )
+
 
 // start with our total
-var total = 0
+let total = 0
 
 // for every value in the fibonacci sequence ...
-for (var i = 0; i <= fibonacci.length; i++) {
+for (let i = 0; i <= fibonacci.length; i++) {
   // ... if the value is even ...
   if ( fibonacci[i] % 2 === 0 ) {
     // ... add it to the current total
@@ -41,4 +44,4 @@ for (var i = 0; i <= fibonacci.length; i++) {
 }
 
 // finally, show us the total!
-console.log( total )
+// console.log( total )

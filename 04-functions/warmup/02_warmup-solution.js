@@ -7,17 +7,17 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 */
 
-var done = false // this will be the condition for our while loop
-var threshold = 20 // we want to check every number less than this number
-var magicNumber = threshold + 1 // this will be our starting number
+let done = false // this will be the condition for our while loop
+let threshold = 10 // we want to check every number less than this number
+let magicNumber = threshold + 1 // this will be our starting number
 
-// handy variable naming
+// handy letiable naming
 while ( !done ) {
   // create a helper variable
-  var isMagicNumber = true
+  let isMagicNumber = true
 
   // loop from 1 to our threshold (10 or 20)
-  for (var i = 1; i <= threshold; i++) {
+  for (let i = 1; i <= threshold; i++) {
 
     if ( magicNumber % i !== 0 ) {
       // if we get some number other than 0,

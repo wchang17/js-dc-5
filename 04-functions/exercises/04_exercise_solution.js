@@ -4,8 +4,8 @@ Card Game of War Exercise Part 1.
 
 */
 
-var suits = ['hearts', 'clubs', 'spades', 'diamonds']
-var ranks = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king']
+const suits = ['hearts', 'clubs', 'spades', 'diamonds']
+const ranks = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king']
 
 /*
 
@@ -23,13 +23,13 @@ deckOfCards.
 // declare our function
 function createDeck( suits, ranks ) {
   // declare the array we weill eventually return
-  var finalDeck = []
+  const finalDeck = []
 
   // first, loop through the suits
-  for (var i = 0; i < suits.length; i++) {
+  for (let i = 0; i < suits.length; i++) {
 
     // second, loop through the ranks
-    for (var j = 0; j < ranks.length; j++) {
+    for (let j = 0; j < ranks.length; j++) {
       // create a string representing a card and push it into
       // our final array
       // i.e. 'ace of hearts'
@@ -44,7 +44,7 @@ function createDeck( suits, ranks ) {
 }
 
 // remembering to call our function
-var deckOfCards = createDeck( suits, ranks )
+const deckOfCards = createDeck( suits, ranks )
 
 // Uncomment the following line to see it work:
 // console.log( deckOfCards )
@@ -61,7 +61,7 @@ Don't worry about removing the card from deckOfCards.
 // declare our function getRandomCard
 function getRandomCard( deck ) {
   // generate a random index between 0 and 52
-  var randomIndex = Math.floor(Math.random() * deck.length)
+  let randomIndex = Math.floor(Math.random() * deck.length)
 
   // return a random card from our deck, using the random
   // index we just created
@@ -69,7 +69,7 @@ function getRandomCard( deck ) {
 }
 
 // call our function and save the return value to a variable
-var randomCard = getRandomCard( deckOfCards )
+const randomCard = getRandomCard( deckOfCards )
 
 // Uncomment the following line to see it work:
 // console.log( randomCard )
@@ -91,11 +91,10 @@ the cards as an array.
 
 // declare our function, passing in the number of cards we want
 // ( i.e. the hand length ) and our deck of cards
-function dealHand( handLength, deck ) {
+function dealHand( deck, handLength = 1) {
   // initialize our hand variable, which we will eventually return
   // and set hand equal to 1, if a hand length isn't provided
-  var hand
-  handLength = handLength || 1
+  let hand
 
   if ( handLength === 1 ) {
     // if handLength is one, then we just want to return a random card
@@ -109,7 +108,7 @@ function dealHand( handLength, deck ) {
     // our hand array
 
     hand = []
-    for (var i = 0; i < handLength; i++) {
+    for (let i = 0; i < handLength; i++) {
       hand.push( getRandomCard( deck ) )
     }
 
@@ -120,21 +119,19 @@ function dealHand( handLength, deck ) {
 }
 
 // Uncomment the following lines to see it work:
-// console.log( dealHand( null, deckOfCards ) )
-// console.log( dealHand( 7, deckOfCards ) )
+// console.log( dealHand( deckOfCards ) )
+// console.log( dealHand( deckOfCards, 7 ) )
 
 
 /*
 
 Create two variables, playerOneCards and playerTwoCards, and
-initialize them as empty arrays.
-
-Deal both playerOneCards and playerTwoCards 7 cards each.
+deal both playerOneCards and playerTwoCards 7 cards each.
 
 */
 
-var playerOneCards = dealHand( 7, deckOfCards )
-var playerTwoCards = dealHand( 7, deckOfCards )
+const playerOneCards = dealHand( deckOfCards, 7 )
+const playerTwoCards = dealHand( deckOfCards, 7 )
 
 
 /*

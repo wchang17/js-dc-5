@@ -25,9 +25,16 @@
 //   console.log( 'this is my first function' )
 // }
 //
-// myFirstFunction
-// myFirstFunction()
 
+// Function assignment
+// const mySecondFunction = function() {
+//   console.log( 'This is my second function' )
+// }
+
+// Arrow functions
+// const myThirdFunction = () => {
+//   console.log( 'This is my third function' )
+// }
 
 // ----------
 // Referencing our function:
@@ -62,6 +69,22 @@
 //
 // addNumbers( 1, 2 )
 
+// Setting default values
+// function addNumbers( numOne, numTwo = 1 ) {
+//   console.log( numOne + numTwo )
+// }
+//
+// addNumbers( 1, 2 )
+// addNumbers( 1 )
+
+// Handling unknown number of inputs
+// 1. arguments
+// 2. object deconstruction
+// function addNumbers( ...numbers ) {
+//   console.log( numbers )
+// }
+
+// addNumbers(1, 2, 3, 4)
 
 /*
 
@@ -166,11 +189,11 @@
 
 
 // Functions as variables
-var myFunction = function () {
-  console.log( 'myFunction variable' )
-}
-
-myFunction()
+// var myFunction = function () {
+//   console.log( 'myFunction variable' )
+// }
+//
+// myFunction()
 
 
 /*
@@ -181,20 +204,20 @@ myFunction()
 
 
 // Pure functions
-function isCurrentYearLeapYear() {
-
-   const year = new Date().getFullYear()
-
-   if(year % 4 !== 0) {
-     return false
-   } else if(year % 100 != 0) {
-     return true
-   } else if(year % 400 != 0) {
-     return false
-   } else {
-     return true
-   }
-
-}
-
-console.log( 'is it a leap year? ', isCurrentYearLeapYear() )
+// function isCurrentYearLeapYear() {
+//
+//    const year = new Date().getFullYear()
+//
+//    if(year % 4 !== 0) {
+//      return false
+//    } else if(year % 100 != 0) {
+//      return true
+//    } else if(year % 400 != 0) {
+//      return false
+//    } else {
+//      return true
+//    }
+//
+// }
+//
+// console.log( 'is it a leap year? ', isCurrentYearLeapYear() )
