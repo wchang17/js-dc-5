@@ -1,3 +1,16 @@
+# Command Line
+In this lesson, we'll cover the basics of navigating the file system on your computer with a tool called the command line. We'll also dive into working with a command line tool called Git and a companion tool called GitHub.
+
+## Learning Objectives
+- Learn how to work in the Terminal
+- Learn the basics of Git and GitHub
+
+## Materials
+- [Slides](https://ga-students.github.io/js-dc-5/01-command-line)
+- [Assignment](01-command-line-JS/assignment.md)
+- [Lesson Notes](01-command-line-JS/lesson_plan.md)
+- [Lesson](https://www.youtube.com/watch?v=Tf3uu66NAdM)
+
 # Assignment 1
 * [Try Git](https://www.codeschool.com/courses/try-git)
 * [Introduction, Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
