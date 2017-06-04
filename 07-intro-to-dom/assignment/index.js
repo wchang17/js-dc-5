@@ -15,7 +15,15 @@ Get the DOM nodes for the table of contents and the article body and save them b
 
 */
 
+// const hi = document.querySelector('h1')
+// console.log(hi.textContent)
 
+
+const toc = document.querySelector('#table-of-contents')
+console.log(toc)
+
+const body = document.querySelector('body')
+console.log(body)
 
 
 /*
@@ -40,10 +48,26 @@ To generate our table of contents we need to do a couple of things:
 let clones = []
 
 for( let i=0; i<documentHeadings.length; i++) {
-documentHeadings[i].cloneNode(false)
 
+let title = documentHeadings[i].textContent
+clones.push(title)
 
 }
+
+const list = document.createElement('ul')
+const titleList = clones.join(" ")
+
+console.log(list)
+
+list.append(titleList)
+
+toc.append(list)
+
+// const div = document.createElement('div')
+
+// toc.appendChild(div)
+// const div = document.createElemnt('div')
+
 
 
 
