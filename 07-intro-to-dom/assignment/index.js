@@ -46,29 +46,46 @@ To generate our table of contents we need to do a couple of things:
 */
 
 let clones = []
+let titles = []
+let headingLinks = []
 
 for( let i=0; i<documentHeadings.length; i++) {
+	// cloneElement()
+let clone = documentHeadings[i].cloneNode(true)
+clones.push(clone)
 
 let title = documentHeadings[i].textContent
-clones.push(title)
+titles.push(title)
+
 
 }
 
-const list = document.createElement('ul')
-const titleList = clones.join(" ")
+console.log(titles)
 
-console.log(list)
+//get all links and set the href id
 
-list.append(titleList)
+for( let j=0; j<clones.length; j++ ) {
+const link = document.createElement('a')
+let links = link.appendChild(clones[j])
+headingLinks.push(links)
+}
 
-toc.append(list)
+//append links to toc
+toc.append(headingLinks)
 
 // const div = document.createElement('div')
 
 // toc.appendChild(div)
 // const div = document.createElemnt('div')
 
+// const list = document.createElement('ul')
 
+//pulls the titles out of the array
+// const titleList = clones.join(" ")
+
+// console.log(list)
+
+// list.append(titleList)
 
 
 
@@ -78,7 +95,10 @@ Bonus, make each item of the ToC a link to that heading on the page.
 
 */
 
+
+
 /*
+
 
 1. Modify each heading on the page so that it has a unique id (or figure out a way to make this part of your loop in part 2! Bonus bonus!)
 
