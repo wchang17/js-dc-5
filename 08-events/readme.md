@@ -26,3 +26,6 @@ If you have time after building pixart and would like to learn about `jQuery`, f
 Read the following sections (found on the left sidebar):
   - jQuery Tutorial (the first section)
   - jQuery HTML (the third section)
+
+Extra credit for working with events is to do Wes Bos' JavaScript 30 exercise on Events:
+[here](https://www.youtube.com/watch?v=VuN8qwZoego&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH&index=1). 
