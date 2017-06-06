@@ -13,8 +13,8 @@ You'll then need to create an <li> element that contains the text from the input
 
 */
 
-var List = document.getElementById('todo-list')
-var Form = document.getElementById('form')
+const List = document.getElementById('todo-list')
+const Form = document.getElementById('form')
 
 // we have to change the button type to submit in order for this to work!
 Form.addEventListener('submit', formSubmitHandler)
@@ -23,8 +23,8 @@ function formSubmitHandler( e ) {
 
   e.preventDefault()
 
-  var formInput = e.target.querySelector('[name=newToDo]')
-  var newToDo = new ToDo( formInput.value )
+  const formInput = e.target.querySelector('[name=newToDo]')
+  const newToDo = ToDo( formInput.value )
 
   List.appendChild( newToDo )
   formInput.value = ''
@@ -33,7 +33,7 @@ function formSubmitHandler( e ) {
 
 function ToDo( todoValue ) {
 
-  var todo = document.createElement('li')
+  const todo = document.createElement('li')
   todo.textContent = todoValue
 
   return todo

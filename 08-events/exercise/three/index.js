@@ -40,6 +40,6 @@ Do one more refactor of the event handler. Your event handler should:
 2. turn that value into a number
 3. add the increment/decrement value to the current value of counterIndex and update the page
 
-Hint: any data that we define in our html with data-* will be in our elements dataset property
+Hint: any data that we define in our html with data-* will be in our elements `dataset` property
 
 */
