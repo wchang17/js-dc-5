@@ -1,45 +1,14 @@
 /*
 
-Exercise 3
-The event object
+Exercise Four: A Todo List Application
 
-*/
+For this exercise students will build out a functioning to-do list application.
+When a user submits the form, their todo item should be added to the end of the to do list.
 
+To accomplish this, you'll need to create an event handler that you can attach to an event listener on the form.
 
+In your event handler, you can get the form from the event object. Then you can query the form for the input element and get it's current value.
 
-/*
-
-Get an array of all the buttons on the screen. Write an event handler that just `console.log`s "you clicked a button" when called. Loop over your array of buttons and attach our event handler to each button
-
-*/
-
-
-
-/*
-
-Refactor your event handler so that it `console.log`s the event object. Poke around the event object
-
-*/
-
-
-
-/*
-
-Refactor your event handler so that it `console.log`s the target subobject
-
-*/
-
-
-
-/*
-
-Student activity:
-Do one more refactor of the event handler. Your event handler should:
-
-1. get the increment/decrement value from the event target
-2. turn that value into a number
-3. add the increment/decrement value to the current value of counterIndex and update the page
-
-Hint: any data that we define in our html with data-* will be in our elements dataset property
+You'll then need to create an <li> element that contains the text from the input value and add it to the end of the todo-list
 
 */
