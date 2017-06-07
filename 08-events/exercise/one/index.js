@@ -28,3 +28,19 @@ the value of counterIndex is incremented by 1 and the new value is added to the
 page
 
 */
+
+let counter = document.querySelector('.js-button')
+let header = document.querySelector('h1')
+let counterIndex = 0
+// header.append(counterIndex)
+header.textContent = `Counter: ${ counterIndex }`
+// header.textContent = 'Counter: ' + counterIndex
+
+counter.addEventListener('click', function(){
+	counterIndex++
+	header.textContent = `Counter: ${ counterIndex }`
+})
+
+// counter.onclick = function() {
+// 	counterIndex++
+// }

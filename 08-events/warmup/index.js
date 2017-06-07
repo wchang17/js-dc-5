@@ -24,7 +24,8 @@ Hint: you can call .querySelector on a node you've already retrieved from the DO
 
 */
 
-
+let gallery = document.querySelector('.js-gallery')
+let galleryItems = gallery.querySelectorAll('.js-gallery-item')
 
 /*
 
@@ -40,11 +41,12 @@ To start, create a variable called slideCount that is equal to the
 number of slides and another variable called slideWidth that is
 equal to the width of a single slide.
 
-To get the width, try .getBoundingClientRect() or .offsetWidth.
+To get the width, try .getBoundingClientRect() returns all object css properties or .offsetWidth returns only the width
 
 */
 
-
+let slideCount = galleryItems.length
+let slideWidth = galleryItems[0].offsetWidth
 
 /*
 
@@ -57,7 +59,7 @@ setInterval() takes two arguments: a reference to a function and the
 interval in milliseconds between when setInterval should call that
 function.
 
-What's the difference between referencing and calling a function?
+What's the difference between referencing and calling a function? Similar to calling it, but you are only passing a value without executing it.
 
 Also, it may seem counterintuitive but we want to save the result of
 calling setInterval() to a variable.
@@ -67,7 +69,12 @@ Create a function called transitionSlide that, for now, just
 
 */
 
+let slideInterval = setInterval( transitionSlide, 5000)
 
+// function transitionSlide() {
+// console.log('Called')
+
+// }
 
 /*
 
@@ -91,3 +98,16 @@ Inside transitionSlide() we need to do two things:
 Hint: delta should always be a negative number
 
 */
+
+
+let currentSlide = 1
+
+function transitionSlide() {
+	if( currentSlide < slideCount ) {
+		gallery.style.transform = `translateX(${ slideWidth * currentSlide }px)`
+		currentSlide++
+	} else{
+		gallery.style.transform = 'translateX(0)'
+		currentSlide = 1
+	}
+}
