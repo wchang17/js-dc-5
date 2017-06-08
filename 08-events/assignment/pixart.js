@@ -12,7 +12,7 @@ In this exercise, students will build out a simple paint application. This appli
 /*
 
 Step 1: Building the canvas
-Our canvas is 500px by 500px and we need to fill it with cells (wich a class of .square) that are 10px by 10px.
+Our canvas is 500px by 500px and we need to fill it with cells (with a class of .square) that are 10px by 10px.
 
 First, add however many divs with a class of "square" as you need to to fill our the #canvas element.
 
@@ -21,6 +21,24 @@ If #canvas is 500 x 500, how many 10 x 10 squares can we fit in to it?
 How we we create elements in JavaScript and add them to the page?
 
 */
+
+let canvas = document.querySelector('#canvas')
+
+
+
+for(let i= 0; i < 500; i++) {
+let cell = document.createElement('div')
+canvas.appendChild(cell)
+cell.className += 'square'
+cell.addEventListener('click', function() {
+cell.style.background = brush.style.background
+
+})
+
+}
+
+// console.log(canvas)
+
 
 
 
@@ -39,6 +57,22 @@ hints:
 
 */
 
+let submit = document.querySelector('#set-color')
+let submittedColor = document.querySelector('#color-field')
+let brush = document.querySelector('.brush')
+submit.addEventListener('click', color)
+
+function color() {
+	let currentColor = submittedColor.value
+	console.log(currentColor)
+	brush.style.background = `${currentColor}`
+
+}
+
+
+
+
+
 
 
 /*
@@ -51,3 +85,6 @@ Hints:
 (2) think about what event we might want to attach our event handler too; what mouse events are there that might make sense?
 
 */
+
+
+
