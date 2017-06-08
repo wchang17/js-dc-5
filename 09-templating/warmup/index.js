@@ -1,6 +1,6 @@
 /*
 
-Index.html contains a ul which has formatted to be a gallery.
+Index.html contains a ul which has been formatted to be a gallery.
 
 A gallery is a row of images that rotate, showing each one for a set period of time before showing the next image. After the last image, the gallery starts over.
 
@@ -15,7 +15,7 @@ Follow along, reading each set of instructions carefully to build out this galle
 Step 1:
 Using JavaScript, get the 'js-gallery' list and save it to a variable. Then pull an array of the 'js-gallery-item' elements from your 'js-gallery'.
 
-Hint: think about DOM methods that we can call on DOM elements we've already pulled from the page
+Thinking back to last class, can we use one of the getElementBy or querySelector methods to get elements nested inside an element we've already retrieved from the DOM?
 
 */
 
@@ -25,88 +25,56 @@ Hint: think about DOM methods that we can call on DOM elements we've already pul
 /*
 
 Step 2:
-Transitioning our gallery from one slide to the next works like this:
-We need to know the width of every slide (they're all the same). We get the gallery and translate it to the left (so negative) by the width of one slide, every few seconds until the last one. Then at the last one, we translate it back to the starting point (which is 0).
+Get the width of a slide and save it to a variable. Create a variable called slideCount that is equal to 0.
 
-To start, create a variable called slideCount that is equal to the number of slides and another variable called slideWidth that is equal to the width of a single slide.
-
-To get the width, try getBoundingClientRect() or offsetWidth.
+We need the width so that we know how much to translate the gallery by and the slide count to check when we're at the beginning or end of the gallery, so we don't translate our images off the screen in a direction where there is no next slide!
 
 */
+
 
 
 
 /*
 
 Step 3:
-We need to set a timer to run ever 5 seconds. There are many ways to set timers with JavaScript, the one we care about here is the setInterval() function.
+Now we're going to write our transitionSlide function so that it will transition the slides in our gallery whenever someone clicks one of our buttons.
 
-setInterval() takes two arguments: a reference to a function and the interval in milliseconds between when setInterval should call that function.
+Declare a variable called currentSlide and set it equal to 1.
 
-What's the difference between referencing and calling a function?
-
-Also, it may seem counterintuitive but we want to save the result of calling setInterval() to a variable.
-
-Create a function called transitionSlide that, for now, just `console.log`'s 'Called!' ever 5000 miliseconds
 
 */
+
+
 
 
 
 /*
 
 Step 4:
-Now we're going to edit our transitionSlide function so that it will transition the slides in our gallery.
+We're going to listen for an event and create an event handler on the .js-nav-list element.
 
-Declare a variable called currentSlide and set it equal to 1.
+Create a variable called sliderNav and assign it to the .js-nav-list element. Then add an event listener for a click event and pass it a reference to the function transitionSlide (which we're going to write below in step 5)
 
-Inside transitionSlide() we need to do two things:
-1. We need to create an if/else statement where:
-  (a) IF currentSlide is less than slideCount we do the following:
-    - take our gallery and change it's transform style property so that it's equal to translateX( delta ), where delta is the width of a single slide times the value of currentSlide.
-    - increment currentSlide
-  (b) ELSE:
-    - set the transform style property so that translateX() is 0
-    - set currentSlide back to 1
-
-
-Hint: delta should always be a negative number
 */
+
 
 
 /*
 
 Step 5:
-To setup - we need to comment out the timer we created in Step 3 and our transitionSlide function in Step 4. We don't need our timer anymore and we're goinog to rewrite our transitionSlide function below! Whoo hoo!
-
-*/
-
-
-/*
-
-Step 6:
-We're going to create an event and event handler on the .js-nav-list element.
-
-Create a variable called sliderNav and assign it to the .js-nav-list element. Then add an event listener for a click event and pass it a reference to the function transitionSlide (which we're going to rewrite below)
-
-*/
-
-
-
-/*
-
-Step 7:
 Declare a function called transitionSlide. transitionSlide takes 1 parameter, event (which is the event object).
 
 Our transitionSlide function is going to be divided into three parts: Setup, Checks and Execution.
 
 1. Setup:
-We need to (a) prevent any default browser behavior and (b) get the direction from our event target and save it to a variable, called currentDirection.
+We need to check to make sure that the event target is one of our links. If it is, then we need to get the direction from our event target and save it to a variable, called currentDirection.
+
+hint: the direction is stored in the data-direction attribute
 
 2. Checks:
 We need to check the current slide and calculate if there is a next slide in that direction. If current slide is the first slide and the current direction is left or if the current slide is the last slide and the direction is right, we shouldn't translate our slider gallery.
 
-Create a conditional that will handle the cases where (a) the slide direction is left and the current slide is 0 and (b) the slide direction is right and the current slide is the number of slides. Your conditional should just `return` if either of these cases is met. Note: we have to explicit conditions that should be met.
+Create a conditional that will handle the cases where (a) the slide direction is left and the current slide is 0 and (b) the slide direction is right and the current slide is the number of slides. Your conditional should just `return` if either of these cases is met.
 
 3. Execution:
 We can transition our slide!
