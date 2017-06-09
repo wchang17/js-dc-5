@@ -26,11 +26,11 @@ let canvas = document.querySelector('#canvas')
 
 
 
-for(let i= 0; i < 500; i++) {
+for(let i= 0; i < 2500; i++) {
 let cell = document.createElement('div')
 canvas.appendChild(cell)
 cell.className += 'square'
-cell.addEventListener('click', function() {
+cell.addEventListener('mouseover', function() {
 cell.style.background = brush.style.background
 
 })

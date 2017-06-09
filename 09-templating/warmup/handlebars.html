@@ -1,0 +1,28 @@
+//JSON
+{
+  person: {
+    profPic: "http://0.gravatar.com/avatar/f190542c0ce80b9bc399f5039f6a8b86",
+    name: {
+      first: "Zakk",
+      last: "Fleischmann"
+    },
+    todos: [
+      'learn JS', 'learn HTML', 'learn CSS'
+    ]
+  }
+}
+
+
+//Template
+
+<h2>My Todos:</h2>
+{{#if person.todos}}
+
+{{else}}
+<h2>You're done for the day!</h2>
+{{/if}}
+<ul>
+{{#each person.todos }}
+<li> {{ this }} </li>
+{{/each}}
+</ul>

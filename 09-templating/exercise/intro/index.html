@@ -11,7 +11,16 @@
     <div class="content">
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.amd.js"></script>
+<!-- Give the script an ID so we can get it in JS. The browser needs to know what type it is. We don't want to execute it as JS--> 
+    <script id="profile" type="text/x-handlebars-template">
+      <div>
+        <img src ="{{ person.profPic }}" alt ="">
+        <h1>{{person.name.first}} {{person.name.last}}</h1> 
+      </div>
+    </script>
+
+<!--     Downloads the Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

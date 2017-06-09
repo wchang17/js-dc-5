@@ -19,7 +19,8 @@ Thinking back to last class, can we use one of the getElementBy or querySelector
 
 */
 
-
+let gallery = document.querySelector('.js-gallery')
+let items = gallery.querySelectorAll('.js-gallery-item')
 
 
 /*
@@ -31,6 +32,8 @@ We need the width so that we know how much to translate the gallery by and the s
 
 */
 
+let slideWidth = items[0].offsetWidth
+let slideCount = 0
 
 
 
@@ -44,7 +47,7 @@ Declare a variable called currentSlide and set it equal to 1.
 
 */
 
-
+let currentSlide = 1
 
 
 
@@ -57,6 +60,9 @@ Create a variable called sliderNav and assign it to the .js-nav-list element. Th
 
 */
 
+let sliderNav = document.querySelector('.js-nav-list')
+
+sliderNav.addEventListener('click', transitionSlide)
 
 
 /*
@@ -85,3 +91,21 @@ Then translate your slide, just like we did last time. Just like we did last tim
 
 
 */
+
+
+function transitionSlide(e) {
+	e.preventDefault()
+
+	if(e.target.tagName === 'A') return //breaks a function
+
+	let currentDirection = e.target.dataset.direction //because html has data attribute called data-direction
+	if(currentSlide === 1 && currentDirection === 'left') return
+	if( currentSlide === items.length && currentDirection === 'right') return
+
+	if ( currentDirection === 'left' ) {
+		currentSlide--
+	} else {
+		currentSlide++
+	}
+	gallery.style.transform = `translateX(-${slideWidth * (currentSlide - 1)}px)`
+}
