@@ -1,19 +1,20 @@
 let form = document.querySelector('#form')
 let submit = document.querySelector('button')
-let input = document.querySelector('input')
+let list = document.querySelector('#app')
 
 let data = {
 
-	todos: ['Do HW', 'Sleep', 'Eat']
+	todos: ['Do HW', 'Sleep', 'Eat', 'Work']
 
 	}
 
 submit.addEventListener('click', function(e){
-// e.preventDefault()
+e.preventDefault()
 
-let value = input.value
-data['todos'].push(value)
-console.log(data.todos)
+let value = document.querySelector('input').value
+data.todos.push(value)
+console.log(data)
+
 })
 
 
