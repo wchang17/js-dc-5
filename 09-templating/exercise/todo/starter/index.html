@@ -10,17 +10,18 @@
             <form id="form">
                 <input type="text" name="newToDo" value="">
                 <button type="submit" name="button">Submit</button>
+                <button type="delete" name="button">Delete</button>
             </form>
             
             <div id="app">
             <script id="list" type="text/x-handlebars-template">
                 <ul class="list">
-                <li>Hi! I'm here</li>
+                <li> <input type="checkbox" name="subscribe" value=""> Hi! I'm here</li>
                 {{#each todos}}
-                <li> {{ this }}</li>
+                <li> <input type="checkbox" name="subscribe" value="false"> {{ this }}</li>
                 {{/each}}
                 </ul>
-        </script>  
+            </script>  
             </div> 
               
         </div>
