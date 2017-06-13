@@ -1,74 +1,55 @@
 let form = document.querySelector('#form')
 let submit = document.querySelector('#submit')
-let delete = document.querySelector('#delete')
+let deleteButton = document.querySelector('#delete')
 let source = document.querySelector('#list')
 
-let DoHW = {
-	toDo : 'Do HW'
-	isComplete : false
+let data = {
+    todos: [
+    {
+    title : 'Do HW'
+    isComplete : false
+    },
+    {
+        title : 'Sleep'
+        isComplete : false
+    },
+    {
+        title : 'Sleep'
+        isComplete : false
+    }
+    ]
 }
 
-let Sleep = {
-	toDo : 'Sleep'
-	isComplete : false
+function renderList() {
+    let listTemplate = Handlebars.compile( source.innerHTML )
+    let renderedTemplate = listTemplate( data )
+    document.querySelector('#app').innerHTML = renderedTemplate
 }
 
-let Eat = {
-	toDo : 'Sleep'
-	isComplete : false
-}
-
-class todos {
-	constructor( isComplete ) {
-
-		this.isComplete = true
-
-	}
-
-	completeTask : function() {
-		if (this.isComplete === true) {
-			console.log('Done')
-		} else {
-			console.log('Working on it')
-		}
-	}
-}
-
+function addToDo() {
 submit.addEventListener('click', function(e){
-e.preventDefault()
+    e.preventDefault()
 
-let value = document.querySelector('input').value
-data.todos.push(value)
-console.log(data)
+    let value = document.querySelector('input').value
+    data.todos.push(value)
+    console.log(data)
 
-
-let listTemplate = Handlebars.compile( source.innerHTML )
-let renderedTemplate = listTemplate( data )
-document.querySelector('#app').innerHTML = renderedTemplate
+    renderList()
 
 })
+}
+
+function deleteToDo() {}
+
+deleteButton.addEventListener('click', function(e){
+    e.preventDefault()
+
+    let value = document.querySelector('input').value 
+    delete value
+    console.log(data)
 
 
-// let form = document.querySelector('#form')
-// let submit = document.querySelector('button')
-// let source = document.querySelector('#list')
+    renderList()
 
-// let data = {
-
-// 	todos: ['Do HW', 'Sleep', 'Eat', 'Work']
-
-// 	}
-
-// submit.addEventListener('click', function(e){
-// e.preventDefault()
-
-// let value = document.querySelector('input').value
-// data.todos.push(value)
-// console.log(data)
-
-
-// let listTemplate = Handlebars.compile( source.innerHTML )
-// let renderedTemplate = listTemplate( data )
-// document.querySelector('#app').innerHTML = renderedTemplate
-
-// })
+})
+}
