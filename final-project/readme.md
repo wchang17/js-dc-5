@@ -11,7 +11,6 @@ You can create anything: a blog users can comment on; an app that allows users t
 ### Technical Requirements
 
 - Use JavaScript to correctly structure the code for a web application:
-  - Structure your application to be a SPA (single page application)
   - Make HTTP requests to your own server
   - Make at least one HTTP request to a third-party server
   - CRUD functionality
@@ -27,14 +26,14 @@ You can create anything: a blog users can comment on; an app that allows users t
 
   - __Clean And Readable Code__. The instructor should be able to read and follow your code easily.  Maintain clean and readable code including: consistent indentation, code commenting and use of proper and consistent naming conventions.
 
-  - __Object Oriented and/or Functional__. Implement function closures, keep code modular, maintain a separation of concerns, only put code on the global scope when absolutely necessary.
+  - __Object Oriented__. Use functions, keep code modular, maintain a separation of concerns, only put code on the global scope when absolutely necessary.
 
 
 ---
 
 ### Necessary Deliverables
 
-* A **production ready web application**, SPA, hosted live on the web.
+* A **production ready web application** hosted live on the web.
 * A  **new git repository hosted on Github** where codebase is maintained.
 * A 5-10 minute **presentation** including 3 technical hurdles, 2 new things you learned, Q&A.
 
@@ -82,7 +81,8 @@ Friend locator site that allows users to see how far away they are from their fr
 
 ### Final Project Schedule
 
-- Idea Submission: April 4
-- UI Draft: April 18
-- In Class Lab Time: April 27
-- Presentations/Due: May 2
+- Idea Submission: June 20th
+- UI Draft: July 6th
+- In Class Lab Time: July 13th
+- Presentations/Due: July 18th
+
