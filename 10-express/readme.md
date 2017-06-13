@@ -30,11 +30,12 @@ There are a few types of requests, the two most important are `GET` and `POST`. 
 
 Server responses are categorized by response codes. The following table shows each broad category of server responses:
 
-| Code | Definition |
-| 200 | OK - request was successfully processed |
-| 300 | Redirect - the url has changed |
-| 400 | Bad request - request is forbidden, not found, etc |
-| 500 | Server error - error, unavailable, etc |
+| Code  | Definition |
+| ----- | ---------- |
+|  200  | OK - request was successfully processed |
+|  300  | Redirect - the url has changed |
+|  400  | Bad request - request is forbidden, not found, etc |
+|  500  | Server error - error, unavailable, etc |
 
 </details>
 
