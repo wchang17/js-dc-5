@@ -1,0 +1,36 @@
+body {
+  height: 100%;
+  width: 100%;
+  padding: 5em 0;
+}
+
+form {
+  text-align: center;
+}
+
+.content {
+  width: 60%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.todo-list-item {
+  margin: 0.5em 0;
+}
+
+.todo-list-item a {
+  margin: 0 1em;
+}
+
+.todo-list-item.complete span {
+  text-decoration: line-through;
+}
