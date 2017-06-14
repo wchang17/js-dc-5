@@ -34,7 +34,13 @@ submit.addEventListener('click', function(e){
     data.todos.push(value)
     console.log(data)
 
+    let newToDo =  {
+    	title: value.value
+    	isComplete: false
+    }
+
     renderList()
+
 
 })
 }

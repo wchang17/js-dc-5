@@ -10,15 +10,16 @@
             <form id="form">
                 <input type="text" name="newToDo" value="">
                 <button id = "submit" type="submit" name="button">Submit</button>
-                <button id = "delete" type="submit" name="button">Delete</button>
             </form>
             
             <div id="app">
             <script id="list" type="text/x-handlebars-template">
                 <ul class="list">
-                <li> <input type="checkbox" name="subscribe" value=""> Hi! I'm here</li>
                 {{#each todos}}
-                <li> <input type="checkbox" name="subscribe" value="false"> {{ this }}</li>
+                <li class="todo-list-item {{#if completed }} complete {{/if }}" id="todo-{{ @index }}"> <span>{{ content }}</span> //the if statement checks if the todo has been completed, and if it has a class will be added called completed that is a selector in the csss
+                    <a href="#" data-index="{{ @index }}">complete</a>
+                    <a href="#" data-index="{{ @index }}">delete</a>
+                  </li>
                 {{/each}}
                 </ul>
             </script>  
