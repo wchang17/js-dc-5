@@ -6,11 +6,14 @@ const hbs = require('express-handlebars')
 const data = require('./pokedex.json')
 const app = express()
 
-// function pokemon(id) {
-// 	for( let i = 0; i < data.pokemon.length; i++) {
+function pokemon(id) {
+	for( let i = 0; i < data.pokemon.length; i++) {
+		if(data.pokemon[i].id === id) {
+			return data.pokemon[i]
+		}
 		
-// 	}
-// }
+	}
+}
 
 app.engine('handlebars', hbs({
 	defaultLayout: 'main'
@@ -22,8 +25,9 @@ app.get('/', function(req, res) {
 	res.render('home', data) //passing data in the template
 })
 
-app.get('/', function(req, res) {
-	res.render('pokemon', data) //passing data in the template
+app.get('/pokemon/:id', function(req, res) {
+	let pokemonData = pokemon(req.params.id)
+	res.render('pokemon', pokemonData) //passing data in the template
 })
 
 app.listen(3000, function() {
