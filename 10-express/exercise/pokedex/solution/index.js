@@ -1,19 +1,18 @@
-var express = require('express')
-var exphbs  = require('express-handlebars')
-var data    = require('./pokedex.json')
+const express = require('express')
+const exphbs  = require('express-handlebars')
+const data    = require('./pokedex.json')
 
 function getPokemon( id ) {
-  var pokemon
-  for (var i = 0; i < data.pokemon.length; i++) {
+
+  for (let i = 0; i < data.pokemon.length; i++) {
     if ( data.pokemon[ i ].id === id ) {
-      pokemon = data.pokemon[ i ]
-      break
+      return data.pokemon[ i ]
     }
   }
-  return pokemon
+
 }
 
-var app = express()
+const app = express()
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
@@ -23,7 +22,7 @@ app.get('/', function( req, res ) {
 })
 
 app.get('/pokemon/:id', function( req, res ) {
-  var pokemon = getPokemon( req.params.id )
+  let pokemon = getPokemon( req.params.id )
   res.render('pokemon', pokemon)
 })
 
