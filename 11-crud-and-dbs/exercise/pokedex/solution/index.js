@@ -3,7 +3,7 @@ const hbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://zakk:faju6uq6@cluster0-shard-00-00-vzytr.mongodb.net:27017,cluster0-shard-00-01-vzytr.mongodb.net:27017,cluster0-shard-00-02-vzytr.mongodb.net:27017/<DATABASE>?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin')
+mongoose.connect('CONNECTION_URI_HERE')
 
 const Pokemon = require('./models/Pokemon.js')
 
