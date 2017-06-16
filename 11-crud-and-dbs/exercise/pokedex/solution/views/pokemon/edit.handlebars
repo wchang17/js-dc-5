@@ -1,0 +1,15 @@
+<h2>Edit a new Pokemon</h2>
+
+<form action="/pokemon/edit/{{ pokemon.id }}" method="post">
+
+  <p>
+    <input type="text" name="name" value="{{ pokemon.name }}" placeholder="Name">
+  </p>
+
+  <p>
+    <input type="text" name="type" value="{{ pokemon.type }}" placeholder="Type">
+  </p>
+
+  <button type="submit" name="button">Save</button>
+
+</form>
