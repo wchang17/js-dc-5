@@ -1,0 +1,21 @@
+<h1>Add To Dos</h1>
+
+<form class="" action="/" method="post">
+  <p>
+    <label for="content">To Do:</label>
+    <input type="text" name="content" value="">
+  </p>
+  <p>
+    <label for="name">Priority:</label>
+    <input type="text" name="name" value="">
+  </p>
+  <input type="submit" name="submit" value="Submit">
+</form>
+
+
+<h1>To Do List</h1>
+<ul>
+{{#each entries }}
+    <li>{{content}}</li>
+{{/each}}
+</ul>
