@@ -37,9 +37,9 @@ D. [Class Pass](./assets/class-pass.png) printed out or on your phone
 | Lesson 09 | [Templating & Build Tools](https://ga-students.github.io/js-dc-5/09-templating)| June 8th  |
 | Lesson 10 | [Express](https://ga-students.github.io/js-dc-5/10-express) | June 13th  |
 | Lesson 11 | [CRUD & Databases](https://ga-students.github.io/js-dc-5/11-crud-and-dbs) | June 15th |
-| Lesson 12 | [APIs](https://ga-students.github.io/js-dc-5/12-apis)| June 20th |
-| Lesson 13 | [Application Architecture](https://ga-students.github.io/js-dc-5/13-architecture) | June 22nd |
-| Lesson 14 | [**Project 2** - HackerWall](https://ga-students.github.io/js-dc-5/14-lab02) | June 27th |
+| Lesson 12 | [Application Architecture](https://ga-students.github.io/js-dc-5/13-architecture) | June 20nd |
+| Lesson 13 | [**Project 2** - HackerWall](https://ga-students.github.io/js-dc-5/14-lab02) | June 22th |
+| Lesson 14 | [APIs](https://ga-students.github.io/js-dc-5/12-apis)| June 27th |
 | Lesson 15 | [Single Page Applications](https://ga-students.github.io/js-dc-5/15-spas) | June 29th |
 | Lesson 16 | [Authentication](https://ga-students.github.io/js-dc-5/16-authentication)| July 6th |
 | Lesson 17 | [Deploying Your App](https://ga-students.github.io/js-dc-5/17-deployment) | July 11th |

@@ -1,0 +1,11 @@
+<h1>To Dos</h1>
+
+<ul>
+  {{#each todos}}
+    <li>
+      <a href="/todo/{{ _id }}">
+        {{ title }}
+      </a>
+    </li>
+  {{/each }}
+</ul>
