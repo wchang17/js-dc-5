@@ -41,7 +41,7 @@ D. [Class Pass](./assets/class-pass.png) printed out or on your phone
 | Lesson 13 | [**Project 2** - HackerWall](https://ga-students.github.io/js-dc-5/14-lab02) | June 22th |
 | Lesson 14 | [APIs](https://ga-students.github.io/js-dc-5/12-apis)| June 27th |
 | Lesson 15 | [Single Page Applications](https://ga-students.github.io/js-dc-5/15-spas) | June 29th |
-| Lesson 16 | [Authentication](https://ga-students.github.io/js-dc-5/16-authentication)| July 6th |
+| Lesson 16 | [Databases Part 2](https://ga-students.github.io/js-dc-5/16-dbs2)| July 6th |
 | Lesson 17 | [Deploying Your App](https://ga-students.github.io/js-dc-5/17-deployment) | July 11th |
 | Lesson 18 | **Project 3** Your App                                  | July 13th |
 | Lesson 19 | Final Project Presentations                                         | July 18th |
