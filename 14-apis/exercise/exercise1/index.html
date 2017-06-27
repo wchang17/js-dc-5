@@ -34,11 +34,18 @@
     <button>Big Red Button</button>
     <div id="result"></div>
     <script type="text/javascript">
-      var button = document.querySelector('button')
-      var resultContainer = document.querySelector('#result')
+      let button = document.querySelector('button')
+      let resultContainer = document.querySelector('#result')
 
       button.addEventListener('click', function( ) {
         // first AJAX call here:
+        let url = 'http://api.openweathermap.org/data/2.5/weather?q=washington,dc&appid=17c4b9321d054573c1c93f24f47e706a';
+
+        // 1. Using XMLHttpRequest()
+
+
+        // 2. Using fetch()
+
 
       })
     </script>
