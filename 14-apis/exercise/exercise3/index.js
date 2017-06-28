@@ -13,7 +13,13 @@ app.get('/', function(req, res){
 
 app.get('/pokemon/:pokeId', function( req, res ) {
   // Make a request to the Pokemon API using request
-
+  request.get(`http://pokeapi.co/api/v2/${req.params.pokeId}`, (err, response, body) =>{
+  	let data = JSON.parse(body)
+  	console.log(data)
+  	res.render('pokemon', {
+  		name: data.name
+  	})
+  })
 })
 
 app.listen( 3000, function() {
