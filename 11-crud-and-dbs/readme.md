@@ -9,7 +9,7 @@
 - [Slides](https://ga-students.github.io/JS-DC/11-crud-and-dbs/#/)
 - [Lesson Notes](https://github.com/ga-students/JS-DC/tree/master/11-crud-and-dbs)
 
-## Key Takeways
+## Key Takeaways
 <details>
   <summary>What are two kinds of databases? Describe both.</summary>
 
