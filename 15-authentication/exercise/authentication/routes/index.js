@@ -1,8 +1,8 @@
-var express = require("express")
+const express = require("express")
 
 // Create a router for handling our application as
 // well as our sign-up flow
-var router = express.Router()
+const router = express.Router()
 
 // Index route
 router.get("/", function( req, res ) {

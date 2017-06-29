@@ -1,12 +1,12 @@
-var express = require("express")
-var mongoose = require("mongoose")
-var hbs = require('express-handlebars')
-var cookieParser = require('cookie-parser')
-var bodyParser = require('body-parser')
+const express = require("express")
+const mongoose = require("mongoose")
+const hbs = require('express-handlebars')
+const cookieParser = require('cookie-parser')
+const bodyParser = require('body-parser')
 
-var routes = require('./routes/index')
+const routes = require('./routes/index')
 
-var app = express()
+const app = express()
 mongoose.connect("mongodb://localhost:27017/peoplebook")
 
 app.engine('handlebars', hbs({
