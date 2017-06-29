@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise 1</title>
+    <style media="screen">
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+      button {
+        display: block;
+        outline: none;
+        border: none;
+        background-color: red;
+        font-size: 3em;
+        padding: 2em 2.5em;
+        color: white;
+        letter-spacing: 1px;
+      }
+      #result {
+        display: block;
+        font-size: 3em;
+        font-weight: bold;
+        margin: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Big Red Button</button>
+    <div id="result"></div>
+    <script type="text/javascript">
+      let button = document.querySelector('button')
+      let resultContainer = document.querySelector('#result')
+
+      button.addEventListener('click', function( ) {
+        // first AJAX call here:
+        let url = 'http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1'
+
+        // 1. Using XMLHttpRequest()
+        let request = new XMLHttpRequest()
+        request.onreadystatechange = handleRequest
+        request.open( 'GET', url )
+        request.send()
+
+        function handleRequest() {
+          if ( request.readyState === 4 ) {
+            let response = JSON.parse( request.response )
+            console.log( response )
+          }
+        }
+
+        // 2. Using fetch()
+        // fetch(url)
+          // .then(response => {
+            // return response.json()
+          // })
+          // .then( json => {
+            // console.log( json )
+          //})
+
+      })
+    </script>
+  </body>
+</html>
