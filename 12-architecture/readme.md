@@ -11,7 +11,7 @@ the different parts of our application.¬
 
 #### Materials¬
 - [Slides](https://ga-students.github.io/JS-DC/12-architecture)¬
-- [Lesson Notes](13-architecture/lesson_plan.md)¬
+- [Lesson Notes](https://github.com/ga-students/JS-DC/tree/master/12-architecture)¬
 - [Lesson](https://www.youtube.com/edit?o=U&video_id=n9ljXpAIpog)¬
 
 ## Assignment
