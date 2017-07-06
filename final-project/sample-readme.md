@@ -1,4 +1,4 @@
-# Overview
+## Overview
 The application I would like to build for my final project is a Farmer's Market Explorer: Farmer.ly! Using data from the Department of Agriculture ([here](https://catalog.data.gov/dataset/farmers-markets-geographic-data)), I will build an application that lets users sign in, search for farmers markets in their city and 'favorite' their favorite local markets. Additionally, I'll include the ability for users to show 'stories' on their profile, so that other users can see how they Farmers Market.
 
 # UI Draft
@@ -32,3 +32,8 @@ I will use the dataset from the Department of Agriculture to seed a database of 
 
 ### Favoriting farmers markets
 When a user is looking at the list view of farmers market, they will have the option to favorite a farmers market by clicking on a start icon next to the farmers market's name. When they click on this, I will use AJAX to send a post request with the ID of the farmers market back to my server. Then, in a route handler I will add that ID to an array of favorited farmers markets on the currently signed in user. Then, when a user loads their profile or a user loads the profile of another user, I will find all of their favorited farmers markets and display them on the profile.
+
+
+
+
+
