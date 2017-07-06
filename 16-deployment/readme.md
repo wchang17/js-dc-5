@@ -7,6 +7,44 @@ publishing them so that others can see and use them!
 - Learn how to deploy static sites
 - Learn how to deploy a dynamic site
 
+## Key Takeaways
+<details>
+<summary>What is the difference between a static application and a dynamic one?</summary>
+
+Dynamic: the front end of the application is built on demand in response to a request by a server.
+Static: the front end of the application is already built and just sent to the client.
+
+</details>
+
+<details>
+<summary>How do you deploy a static application to GitHub Pages</summary>
+
+GitHub Pages uses a reserved branch called `gh-pages`. For any repository, you can checkout the `gh-pages`
+branch and push to your remote repository and your site will be available in a few minutes.
+
+1. From `master`, run `git checkout -b gh-pages`
+2. Then run `git push origin gh-pages`
+
+To update your site or application, switch back to `master` with `git checkout master`, make your changes,
+then switch back to `gh-pages` with `git checkout gh-pages` and merge your changes into `gh-pages` with `git
+merge master`. After that, you can push with `git push origin gh-pages`.
+
+</details>
+
+<details>
+<summary>How do you deploy a dynamic application to Heroku</summary>
+
+This assumes you've set up your account and installed the Heroku CLI.
+
+1. Create a `Procfile`
+2. Update your `package.json` to include a `start` script and the `engines` your application needs to run
+3. Create the application with `heroku create`
+4. Push your application to heroku with `git push heroku master`
+
+If you run in to errors, check the common gotcha's from [the slides](https://ga-students.github.io/JS-DC/16-deployment/#/6/5).
+
+</details>
+
 ## Materials
 - [Slides](https://ga-students.github.io/JS-DC/17-deployment)
 - [Lesson Notes](17-deployment/lesson_plan.md)
