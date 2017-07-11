@@ -12,3 +12,5 @@ Final Project Ideas:
 3. Create a site that collects articles from conservative, independent and liberal news outlets.
 	- Everyday article links, titles, and descriptions will be posted
 	- Users can comment on the posts
+
+	final project repo link: https://github.com/wchang17/js-dc-final-project
