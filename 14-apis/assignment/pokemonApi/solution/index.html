@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Poke Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="content">
+        <h1>Pokemon:</h1>
+        <form id="form">
+          <p>
+            <label for="pokemon">Pokemon ID:</label>
+            <input type="text" name="pokemon" value="">
+          </p>
+          <button type="submit" name="submit">Submit</button>
+        </form>
+        <div id="app"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+
+    <script id="template-single" type="text/x-handlebars-template">
+      <div class="pokemon">
+        <h2>{{ name }}</h2>
+        {{#each types}}
+          <span>{{ this.type.name }}</span>
+        {{/each }}
+      </div>
+    </script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
