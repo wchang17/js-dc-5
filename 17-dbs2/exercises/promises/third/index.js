@@ -12,3 +12,10 @@
   *
   */
 
+const request = require('request-promise')
+
+request.get('http://pokeapi.co/api/v2/pokemon/1')
+  .then( response => JSON.parse(response) )
+  .then( data => data.moves )
+  .then( moves => moves.map( move => move.move.name) )
+  .then( moveList => console.log(moveList) )

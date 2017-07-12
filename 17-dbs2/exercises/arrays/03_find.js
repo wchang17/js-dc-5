@@ -13,8 +13,9 @@
  */
 
 
-
-
+let numbers = [3, 7, 5, 1, 9, 20]
+let favNumber = numbers.find(x => x > 2000000)
+console.log(favNumber)
 
 /*
  * Student Activity:
@@ -27,4 +28,6 @@ let students = [
   { name: 'Elmo', grade: 9 },
   { name: 'Ernie', grade: 10 }
 ]
+
+students.find(x => x.name === 'Elmo')
 

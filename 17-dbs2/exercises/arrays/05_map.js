@@ -9,7 +9,12 @@
   * let newArray = oldArray.map(callback)
  */
 
+ // let numbers = [3, 7, 5, 1, 9, 20, 6000000, 5000000]
 
+ // let numsTimesTwo = numbers.map(x => x * 2)
+
+ // console.log(numbers)
+ // console.log(numsTimesTwo)
 
 
 
@@ -30,4 +35,6 @@ let students = [
 ]
 
 
+let gradePlusOne = students.map(x => x.grade++)
 
+console.log(gradePlusOne)

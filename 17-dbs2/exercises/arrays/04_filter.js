@@ -8,7 +8,9 @@
   * let newArray = oldArray.filter(callback)
  */
 
-
+ let numbers = [3, 7, 5, 1, 9, 20, 6000000, 5000000]
+let favNumber = numbers.filter(x => x > 2000000)
+console.log(favNumber)
 
 /*
  * Student Activity:
@@ -25,3 +27,6 @@ let students = [
   { name: 'Bert', grade: 10 },
   { name: 'Ernie', grade: 10 }
 ]
+
+let sophmores = students.filter( students => student.grade === 10)
+console.log(sophmores)

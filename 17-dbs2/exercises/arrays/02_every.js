@@ -25,3 +25,11 @@
  */
 
 let students = ['Big Bird', 'Elmo', 'Ernie']
+
+function checkAvailability( arr, val) {
+
+  return students.some(element => element === val )
+}
+
+let names = checkAvailability(students, 'Bert')
+console.log(names)

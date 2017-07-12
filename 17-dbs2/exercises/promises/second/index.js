@@ -6,3 +6,10 @@
   *
   */
 
+const request = require('request-promise')
+
+request.get('http://pokeapi.co/api/v2/pokemon/1')
+	.then( response => JSON.parse(response) )
+	.then( data => data.stats )
+	.then( stats => stats.map( stat => stat.stat.name) )
+	.then( statList => console.log(statList) )
